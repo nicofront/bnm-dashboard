@@ -1,0 +1,418 @@
+<div class="container">
+
+
+   <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title"><strong>Carga de documentos</strong></h5>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <i class="material-icons">close</i>
+       </button>
+      </div>
+      <div class="modal-body">
+       <p>Acá puedes adjuntar tu “Orden Médica” y para que podamos confirmar tu diagnóstico. En 5 días hábiles enviaremos una respuesta.</p>
+       <div class="text-center drag-area rounded-sm p-4 mb-4 mt-4">
+        <div class="d-none d-lg-block">
+         <i class="material-icons md-36 text-primary">flip_to_front</i>
+         <p>Arrastra y suelta el archivo o <a href="#">búscalo en tu computador</a></p>
+        </div>
+        <div class="d-block d-lg-none">
+         <i class="material-icons md-36 text-primary">attach_file</i>
+         <p>Haz <a href="#">click aquí</a>para subir el archivo desde tu celular</p>
+        </div>
+        <small class="text-info">JPG/PNG/PDF. Máximo: 5 mb.</small>
+       </div>
+      </div>
+      <div class="modal-footer">
+       <div class="container p-0">
+        <div class="row">
+         <div class="ml-auto col-6 col-md-4 col-lg-3">
+          <button type="button" class="btn btn-primary w-100">Aceptar</button>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+  </div>
+
+
+  <section class="m-flex m-section-header">
+    <h1 class="color-text-bl">Sácale provecho a tu plan</h1>
+    <a href="" class="m-flex link">
+      <img src="../assets/svg/download.svg" />
+      <span class="section-header__download-txt">Descargar dashboard</span>
+    </a>
+
+  </section>
+
+  <section class="section-wrapper">
+    <div class="section--right mb--24">
+      <div class="card-my-plan__wrapper">
+        <div class="card-my-plan__left m-flex m-flex-main">
+          <div class="m-section-plan">
+            <div class="card-plan__header">
+              <strong class="card-plan__title">Mi Plan</strong
+              >
+              <img class="tooltipimage" _ngcontent-qhc-c17="" src="../assets/svg/question.svg" /><br />
+              <div class="m-title">Salud Preferente Lite Ultra AB/204</div>
+              <div class="m-flex">
+                <div class="m-title-descrip">
+                  <span class="code-label">Código: </span>
+                  <span class="code-value">BPRLU204AB</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-plan__footer">
+              <div class="card-plan__left">
+                <p class="card-plan__footer-label">Tope general anual por beneficiario</p>
+                <p class="card-plan__footer-value">9.500 UF</p>
+              </div>
+              <div class="card-plan__right">
+                <p class="card-plan__footer-label">Arancel asociado a tu plan</p>
+                <p class="card-plan__footer-value">B1</p>
+              </div>
+            </div>
+            <div class="plan__toggle-box">
+              <a class="plan__toggle" (click)="toggleDocuments()">
+                <p>
+                  {{ !isDocuemntsVisible ? 'VER DOCUMENTOS A DESCARGAR' : 'OCULTAR DOCUMENTOS A DESCARGAR' }}
+                </p>
+                <img
+                  src="../assets/svg/arrow-fill.svg"
+                  class="plan__toggle-icon"
+                  [ngClass]="{ 'h-rotate--180': isDocuemntsVisible }"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-my-plan__right" *ngIf="isDocuemntsVisible">
+          <div class="card-my-plan__links">
+            <a href="#" class="card-my-plan__link link">
+              <img src="../assets/svg/download.svg" />
+              <span class="card-my-plan__link-label">
+                Descargar Mi Plan <img class="tooltipimage" src="../assets/svg/question_secondary.svg" />
+              </span>
+            </a>
+            <a href="#" class="card-my-plan__link link">
+              <img src="../assets/svg/download.svg" />
+              <span class="card-my-plan__link-label">
+                Descargar cartilla valorizada <img class="tooltipimage" src="../assets/svg/question_secondary.svg" />
+              </span>
+            </a>
+            <a href="#" class="card-my-plan__link link">
+              <img src="../assets/svg/download.svg" />
+              <span class="card-my-plan__link-label">
+                Descargar arancel <img class="tooltipimage" src="../assets/svg/question_secondary.svg" />
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="c-card card-monthly-payment m-color-grow-min mb--24 card-monthly-payment--desktop">
+      <div class="card-monthly-payment__header">
+        <img src="../assets/svg/monthly_payment.svg" /><br />
+        <div>
+          <div class="card-monthly-payment__title">Pago mensual</div>
+          <div class="m-amount">$ 199.248 / UF 6,65</div>
+        </div>
+      </div>
+      <div class="card-monthly-payment__bottom">
+        <a href="" class="link">Ver detalle</a>
+        <img src="../assets/svg/arrow_forward.svg" />
+      </div>
+    </div>
+  </section>
+
+  <section class="m-flex m-content-plans">
+    <div class="section--right section-2--wrapper">
+      <div class="providers__wrapper">
+        <h3 class="card-title h-m--0">Prestadores preferentes</h3>
+        <ul class="providers__list">
+          <li class="providers__item">
+            <img src="../assets/img/alemana.png" alt="" />
+          </li>
+          <li class="providers__item">
+            <img src="../assets/img/andes.png" alt="" />
+          </li>
+          <li class="providers__item">
+            <img src="../assets/img/condes.png" alt="" />
+          </li>
+          <li class="providers__item">
+            <img src="../assets/img/davila.png" alt="" />
+          </li>
+          <li class="providers__item">
+            <img src="../assets/img/indisa.png" alt="" />
+          </li>
+          <li class="providers__item">
+            <img src="../assets/img/sm.png" alt="" />
+          </li>
+          <li class="providers__item">
+            <img src="../assets/img/uc.png" alt="" />
+          </li>
+          <li class="providers__item">
+            <img src="../assets/img/ucsc.png" alt="" />
+          </li>
+          <li class="providers__item">
+            <img src="../assets/img/vespucio.png" alt="" />
+          </li>
+          <li class="providers__item">
+            <img src="../assets/img/alemana.png" alt="" />
+          </li>
+          <li class="providers__item">
+            <img src="../assets/img/alemana.png" alt="" />
+          </li>
+          <li class="providers__item">
+            <img src="../assets/img/alemana.png" alt="" />
+          </li>
+        </ul>
+        <div class="link-see-more__wrapper">
+          <a href="" class="link-see-more">
+            <div href="" class="link__label">Ver todos mis prestadores preferentes</div>
+            <img src="../assets/svg/arrow_forward.svg" />
+          </a>
+        </div>
+      </div>
+
+      <div class="c-card card-surplus m-color-grow-min">
+        <div class="card-surplus__header">
+          <img src="../assets/svg/my_surplus.svg" /><br />
+          <div class="rigth">
+            <div class="card-surplus__title">Mis Excedentes</div>
+            <div class="m-amount">$ 199.248</div>
+          </div>
+        </div>
+        <div class="link-see-more__wrapper">
+          <a href="" class="link-see-more">
+            <div href="" class="link__label">Usar mis excedentes</div>
+            <img src="../assets/svg/arrow_forward.svg" />
+          </a>
+        </div>
+      </div>
+
+      <div class="c-card card-monthly-payment m-color-grow-min mb--24 card-monthly-payment--mobile">
+        <div class="card-monthly-payment__header">
+          <img src="../assets/svg/monthly_payment.svg" /><br />
+          <div>
+            <div class="card-monthly-payment__title">Pago mensual</div>
+            <div class="m-amount">$ 199.248 / UF 6,65</div>
+          </div>
+        </div>
+        <div class="card-monthly-payment__bottom">
+          <div>Ver detalle</div>
+          <img src="../assets/svg/arrow_forward.svg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="c-card m-color-grow-min card-my-bonuses mb--24">
+      <div class="h-width--100">
+        <div class="card-surplus__top">
+          <div class="card-surplus__title mb--12">Mis bonificaciones</div>
+        </div>
+        <div class="card-bonuses">
+          <div class="card-bonuses__img">
+            <img src="../assets/svg/kinesiology.svg" />
+          </div>
+          <span>
+            <p class="card-bonuses__label mt--0 mb--5">Kinesiología</p>
+            <p class="card-bonuses__value">4 sesiones</p>
+          </span>
+        </div>
+        <span class="card-bonuses__line"></span>
+        <div class="card-bonuses">
+          <div class="card-bonuses__img">
+            <img src="../assets/svg/frames_crystals.svg" />
+          </div>
+          <span>
+            <p class="card-bonuses__label mt--0 mb--0">Marcos y cristales</p>
+          </span>
+        </div>
+      </div>
+      <div class="m-text-info-silver color-text-bl card-bonuses__subtitle">Última actualización hace dos días</div>
+    </div>
+  </section>
+
+  <section class="m-content-card m-color-grow-sub color-text-bl bg-color-lgrey">
+    <div class="m-section-my-benefits-label mb--24">Mis prestaciones</div>
+    <bm-tabs [tabs]="tabs" (selectedTab)="selectTab($event)"></bm-tabs>
+    <div class="tab-content-wrapper" *ngIf="activedTab === 0">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="m-section-my-benefits-sub">Selecciona una prestación</div>
+          <div class="form-group">
+           <select class="custom-select select2" id="exampleFormControlSelect1">
+            <option>Día Cama (201001)</option>
+            <option>Día Cama (201001)</option>
+           </select>
+           <label for="exampleFormControlSelect1">Acceso Web</label>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="m-content-info bg-color-lgrey">
+        <strong>Cobertura preferente</strong><br /><br />
+        <div class="m-grid m-tilte__info">
+          <div>Código de prestación</div>
+          <div>Arancel asociado a tu plan</div>
+          <div>Arancel</div>
+          <div>Tope anual por beneficiario</div>
+        </div>
+        <div class="m-grid m-descrip__info">
+          <div>201001</div>
+          <div>B1</div>
+          <div>$3268</div>
+          <div>9.500 UF</div>
+        </div>
+      </div> -->
+      <div class="m-section-canvas section-canvas row">
+        <div class="canvas1 canvas col-md-8">
+          <div class="canvas__head">
+            <h3 class="canvas__title">
+              Cobertura preferente
+            </h3>
+            <p class="canvas__tope">
+              Tope por evento: <strong>Sin tope</strong>
+            </p>
+            <p class="canvas__tope">
+              Tope anual: <strong>Sin tope</strong>
+            </p>
+          </div>
+          <canvas
+            baseChart
+            [data]="barChartData"
+            [options]="barChartOptions"
+            [plugins]="barChartPlugins"
+            [legend]="barChartLegend"
+            [type]="'bar'"
+          >
+          </canvas>
+
+          <div class="providers__section">
+            <div class="row">
+              <div class="col-md-3 providers__column">
+                <h3>
+                  Prestadores con cobertura al 100%
+                </h3>
+                <div class="providers__column__item">
+                  <ul>
+                    <li>
+                      <img src="../assets/img/davila.png" alt="" />
+                      <a href="">Ver ubicación</a>
+                    </li>
+                    <li>
+                      <img src="../assets/img/vespucio.png" alt="" />
+                      <a href="">Ver ubicación</a>
+                    </li>
+                    <li>
+                      <img src="../assets/img/sm.png" alt="" />
+                      <a href="">Ver ubicación</a>
+                    </li>
+                    <li>
+                      <img src="../assets/img/condes.png" alt="" />
+                      <a href="">Ver ubicación</a>
+                    </li>
+                    <li>
+                      <img src="../assets/img/condes.png" alt="" />
+                      <a href="">Ver ubicación</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 providers__column">
+                <h3>
+                  Prestadores con cobertura al 80%
+                </h3>
+                <div class="providers__column__item">
+                  <ul>
+                    <li>
+                      <img src="../assets/img/vespucio.png" alt="" />
+                      <a href="">Ver ubicación</a>
+                    </li>
+                    <li>
+                      <img src="../assets/img/sm.png" alt="" />
+                      <a href="">Ver ubicación</a>
+                    </li>
+                    <li>
+                      <img src="../assets/img/condes.png" alt="" />
+                      <a href="">Ver ubicación</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 providers__column">
+                <h3>
+                  Prestadores con cobertura al 70%
+                </h3>
+                <div class="providers__column__item">
+                  <ul>
+                    <li>
+                      <img src="../assets/img/sm.png" alt="" />
+                      <a href="">Ver ubicación</a>
+                    </li>
+                    <li>
+                      <img src="../assets/img/condes.png" alt="" />
+                      <a href="">Ver ubicación</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 providers__column">
+                <h3>
+                  Prestadores con cobertura al 50%
+                </h3>
+                <div class="providers__column__item">
+                  <ul>
+                    <li>
+                      <img src="../assets/img/condes.png" alt="" />
+                      <a href="">Ver ubicación</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="canvas2 canvas col-md-4">
+          <div class="canvas__head">
+            <h3 class="canvas__title">
+              Cobertura libre elección
+            </h3>
+            <p class="canvas__tope">
+              Tope por evento: <strong>5,5 UF</strong>
+            </p>
+            <p class="canvas__tope">
+              Tope anual: <strong>Sin tope</strong>
+            </p>
+          </div>
+          <canvas
+            baseChart
+            [data]="barChartData2"
+            [options]="barChartOptions"
+            [plugins]="barChartPlugins"
+            [legend]="barChartLegend"
+            [type]="'bar'"
+          >
+          </canvas>
+          <div class="providers__section">
+            <div class="row">
+              <div class="col-md-12 providers__column">
+                <ul>
+                  <li>
+                    <img src="../assets/img/condes.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="m-content-card-update mt--0 mb--0">
+      Última actualización hace dos días
+    </p>
+  </section>
+</div>
