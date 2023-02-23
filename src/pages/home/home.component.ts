@@ -9,7 +9,7 @@ import { Tab } from 'src/components/tabs/tabs.types';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  public barChartLegend = true;
+  public barChartLegend = false;
   public barChartPlugins = [];
   public activedTab = 0;
   public isDocuemntsVisible = false;
@@ -84,6 +84,10 @@ export class HomeComponent {
   }
 
   public toggleDocuments() {
+    let para = document.getElementById("mainbox");
+    if(para){
+      para.classList.toggle("active");
+    }
     this.isDocuemntsVisible = !this.isDocuemntsVisible;
   }
 }
