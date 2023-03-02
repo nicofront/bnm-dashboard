@@ -637,6 +637,40 @@ a:hover .material-icons{
   }
 }
 
+.table-prestadores{
+  table{
+    thead{
+      tr{
+        th{
+          background-color: #EBEBEB;
+          text-align: right;
+          color: #173181;
+          padding: 16px 24px;
+          &:first-child{
+            text-align: left;
+          }
+        }
+      }
+    }
+    tbody{
+      tr{
+        td{
+          text-align: right;
+          vertical-align: middle;
+          color: #173181;
+          padding: 11px 16px;
+          img{
+            max-height: 29px;
+          }
+          &:first-child{
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
 .providers__wrapper {
   background: #fdfdfd;
   border: 2px solid #ebebeb;
