@@ -73,6 +73,11 @@ export class HomeComponent {
     },
   };
 
+  public toolOptions = {
+      'placement': 'top',
+      'showDelay': 300
+  }
+
   public ngOnInit() {
     if (window.innerWidth >= 992) {
       this.isDocuemntsVisible = true;

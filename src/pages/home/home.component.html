@@ -212,7 +212,7 @@
                   Descargar Mi Plan
                 </span>
               </a>
-              <span class="material-icons md-18">&#xe887;</span>
+              <span tooltip="Conoce las coberturas, topes, prestadores y condiciones específicas de tu plan de salud." [options]="toolOptions" class="material-icons material-tooltip md-18">&#xe887;</span>
             </div>
             <div class="card-my-plan__link">
               <a href="#">
@@ -221,7 +221,7 @@
                   Descargar cartilla valorizada
                 </span>
               </a>
-              <span class="material-icons md-18">&#xe887;</span>
+              <span tooltip="Conoce las coberturas de tu plan expresadas en montos." [options]="toolOptions" class="material-icons material-tooltip md-18">&#xe887;</span>
             </div>
             <div class="card-my-plan__link">
               <a href="">
@@ -230,7 +230,7 @@
                   Descargar arancel
                 </span>
               </a>
-              <span class="material-icons md-18">&#xe887;</span>
+              <span tooltip="Conoce la lista de prestaciones que cubre tu plan de salud con un valor referencial." [options]="toolOptions" class="material-icons material-tooltip md-18">&#xe887;</span>
             </div>
           </div>
         </div>
@@ -402,12 +402,13 @@
               Cobertura preferente
             </h3>
             <p class="canvas__tope">
-              Tope por evento: 
+              <span tooltip="Monto máximo que cubre la Isapre por cada prestación de salud, indicado en UF o Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope por evento:</span>
               <strong>Sin tope</strong>
               <span class="material-icons green">&#xe52d;</span>
             </p>
             <p class="canvas__tope">
-              Tope anual: 
+              <span tooltip="Monto máximo en pesos que cubre la Isapre dentro de un año por todas las prestaciones, indicado en UF o
+Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual: </span>
               <strong>Sin tope</strong>
               <span class="material-icons green">&#xe52d;</span>
             </p>
@@ -546,12 +547,13 @@
               Cobertura libre elección
             </h3>
             <p class="canvas__tope">
-              Tope por evento: 
+              <span tooltip="Monto máximo que cubre la Isapre por cada prestación de salud, indicado en UF o Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope por evento:</span>
               <strong>5,5 UF</strong>
               <span class="material-icons green">&#xe52d;</span>
             </p>
             <p class="canvas__tope">
-              Tope anual: 
+              <span tooltip="Monto máximo en pesos que cubre la Isapre dentro de un año por todas las prestaciones, indicado en UF o
+Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual: </span>
               <strong>Sin tope</strong>
               <span class="material-icons red">&#xe002;</span>
             </p>

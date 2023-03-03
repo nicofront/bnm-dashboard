@@ -23,6 +23,7 @@
     "bootstrap-banmedica": "git+http://10.195.195.8:7990/scm/web/webkit.git",
     "chart.js": "^3.9.1",
     "ng2-charts": "^4.0.0",
+    "ng2-tooltip-directive": "^2.10.3",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
