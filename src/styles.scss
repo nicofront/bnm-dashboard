@@ -44,6 +44,19 @@ body {
   margin: 0;
 }
 
+.dashmodal .modal-flexible__body{
+  transform: translate(-50%,0%);
+}
+
+.modal-flexible__footer{
+  display: none;
+}
+
+.dashtooltip{
+  padding: 0px !important;
+  background: #173181 !important; 
+}
+
 .tooltip-simple{
   background: #173181;
   font-size: 14px;
@@ -54,15 +67,55 @@ body {
   color: #fff;
 }
 
-.dashmodal .modal-flexible__body{
-  transform: translate(-50%,0%);
-}
-
-.dashtooltip{
-  padding: 0px !important;
-  background: #173181 !important; 
-}
-
-.modal-flexible__footer{
-  display: none;
+.tooltip-table{
+  background: #173181;
+  font-size: 14px;
+  line-height: 20px;
+  width: 252px;
+  padding: 16px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: left;
+  h3{
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #fff;
+  }
+  strong{
+    font-size: 19px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+  table{
+    tr{
+      td{
+        vertical-align: bottom;
+        padding: 0;
+        padding-bottom: 12px;
+        .material-icons{
+          font-size: 20px;
+          &.symbol{
+            font-family: 'Material Symbols outlined';
+          }
+        }
+        a{
+          text-decoration: underline;
+          color: #fff;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+        &:first-child{
+          padding-right: 10px;
+        }
+      }
+      &:last-child{
+        td{
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
 }

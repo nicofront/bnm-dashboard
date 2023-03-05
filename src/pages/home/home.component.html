@@ -92,7 +92,7 @@
                   Descargar Mi Plan
                 </span>
               </a>
-              <span tooltip="Conoce las coberturas, topes, prestadores y condiciones específicas de tu plan de salud." [options]="toolOptions" class="material-icons material-tooltip md-18">&#xe887;</span>
+              <span tooltip="<div class='tooltip-simple'>Conoce las coberturas, topes, prestadores y condiciones específicas de tu plan de salud.</div>" [options]="toolOptions" class="material-icons material-tooltip md-18">&#xe887;</span>
             </div>
             <div class="card-my-plan__link">
               <a href="#">
@@ -101,7 +101,7 @@
                   Descargar cartilla valorizada
                 </span>
               </a>
-              <span tooltip="Conoce las coberturas de tu plan expresadas en montos." [options]="toolOptions" class="material-icons material-tooltip md-18">&#xe887;</span>
+              <span tooltip="<div class='tooltip-simple'>Conoce las coberturas de tu plan expresadas en montos.</div>" [options]="toolOptions" class="material-icons material-tooltip md-18">&#xe887;</span>
             </div>
             <div class="card-my-plan__link">
               <a href="">
@@ -110,7 +110,7 @@
                   Descargar arancel
                 </span>
               </a>
-              <span tooltip="Conoce la lista de prestaciones que cubre tu plan de salud con un valor referencial." [options]="toolOptions" class="material-icons material-tooltip md-18">&#xe887;</span>
+              <span tooltip="<div class='tooltip-simple'>Conoce la lista de prestaciones que cubre tu plan de salud con un valor referencial.</div>" [options]="toolOptions" class="material-icons material-tooltip md-18">&#xe887;</span>
             </div>
           </div>
         </div>
@@ -282,13 +282,13 @@
               Cobertura preferente
             </h3>
             <p class="canvas__tope">
-              <span tooltip="Monto máximo que cubre la Isapre por cada prestación de salud, indicado en UF o Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope por evento:</span>
+              <span tooltip="<div class='tooltip-simple'>Monto máximo que cubre la Isapre por cada prestación de salud, indicado en UF o Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope por evento:</span>
               <strong>Sin tope</strong>
               <span class="material-icons green">&#xe52d;</span>
             </p>
             <p class="canvas__tope">
-              <span tooltip="Monto máximo en pesos que cubre la Isapre dentro de un año por todas las prestaciones, indicado en UF o
-Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual: </span>
+              <span tooltip="<div class='tooltip-simple'>Monto máximo en pesos que cubre la Isapre dentro de un año por todas las prestaciones, indicado en UF o
+Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope anual: </span>
               <strong>Sin tope</strong>
               <span class="material-icons green">&#xe52d;</span>
             </p>
@@ -301,6 +301,7 @@ Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual
             [type]="'bar'"
           >
           </canvas>
+
 
           <div class="providers__section">
             <div class="row">
@@ -315,13 +316,10 @@ Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual
                   <div class="providers__column__scroll">
                     <ul>
                       <li>
-                        <a href="" class="eyetooltip">
-                          <span class="material-icons">&#xe8f4;</span>Ver detalle
-                        </a>
                         <img src="../assets/img/davila.png" alt="" />
-                        <a href="" class="eyetooltip">
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
-                        </a>
+                        </div>
                         <a href="" class="adress">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
@@ -329,9 +327,9 @@ Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual
                       </li>
                       <li>
                         <img src="../assets/img/vespucio.png" alt="" />
-                        <a href="" class="eyetooltip">
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
-                        </a>
+                        </div>
                         <a href="" class="adress">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
@@ -339,9 +337,9 @@ Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual
                       </li>
                       <li>
                         <img src="../assets/img/sm.png" alt="" />
-                        <a href="" class="eyetooltip">
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
-                        </a>
+                        </div>
                         <a href="" class="adress">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
@@ -349,9 +347,9 @@ Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual
                       </li>
                       <li>
                         <img src="../assets/img/condes.png" alt="" />
-                        <a href="" class="eyetooltip">
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
-                        </a>
+                        </div>
                         <a href="" class="adress">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
@@ -359,9 +357,9 @@ Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual
                       </li>
                       <li>
                         <img src="../assets/img/condes.png" alt="" />
-                        <a href="" class="eyetooltip">
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
-                        </a>
+                        </div>
                         <a href="" class="adress">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
@@ -380,9 +378,9 @@ Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual
                     <ul>
                       <li>
                         <img src="../assets/img/vespucio.png" alt="" />
-                        <a href="" class="eyetooltip">
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
-                        </a>
+                        </div>
                         <a href="" class="adress">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
@@ -390,9 +388,9 @@ Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual
                       </li>
                       <li>
                         <img src="../assets/img/sm.png" alt="" />
-                        <a href="" class="eyetooltip">
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
-                        </a>
+                        </div>
                         <a href="" class="adress">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
@@ -400,9 +398,9 @@ Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual
                       </li>
                       <li>
                         <img src="../assets/img/condes.png" alt="" />
-                        <a href="" class="eyetooltip">
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
-                        </a>
+                        </div>
                         <a href="" class="adress">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
@@ -421,9 +419,9 @@ Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual
                     <ul>
                       <li>
                         <img src="../assets/img/sm.png" alt="" />
-                        <a href="" class="eyetooltip">
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
-                        </a>
+                        </div>
                         <a href="" class="adress">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
@@ -431,9 +429,9 @@ Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual
                       </li>
                       <li>
                         <img src="../assets/img/condes.png" alt="" />
-                        <a href="" class="eyetooltip">
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
-                        </a>
+                        </div>
                         <a href="" class="adress">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
@@ -452,9 +450,9 @@ Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual
                     <ul>
                       <li>
                         <img src="../assets/img/condes.png" alt="" />
-                        <a href="" class="eyetooltip">
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
-                        </a>
+                        </div>
                         <a href="" class="adress">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
@@ -474,13 +472,12 @@ Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual
               Cobertura libre elección
             </h3>
             <p class="canvas__tope">
-              <span tooltip="Monto máximo que cubre la Isapre por cada prestación de salud, indicado en UF o Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope por evento:</span>
+              <span tooltip="<div class='tooltip-simple'>Monto máximo que cubre la Isapre por cada prestación de salud, indicado en UF o Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope por evento:</span>
               <strong>5,5 UF</strong>
               <span class="material-icons green">&#xe52d;</span>
             </p>
             <p class="canvas__tope">
-              <span tooltip="Monto máximo en pesos que cubre la Isapre dentro de un año por todas las prestaciones, indicado en UF o
-Veces Arancel (VA)." [options]="toolOptions" class="material-tooltip">Tope anual: </span>
+              <span tooltip="<div class='tooltip-simple'>Monto máximo en pesos que cubre la Isapre dentro de un año por todas las prestaciones, indicado en UF o Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope anual: </span>
               <strong>Sin tope</strong>
               <span class="material-icons red">&#xe002;</span>
             </p>
