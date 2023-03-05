@@ -799,42 +799,6 @@ a:hover .material-icons{
     padding-left: 0;
   }
   .providers__column{
-    .providers__column__item{
-      max-height: 200px;
-      overflow: scroll;
-      @media (max-width: 768px){
-        max-height: 100%;
-        overflow: initial;
-        width: 800px;
-      }
-    }
-    h3{
-      display: none;
-    }
-    @media (max-width: 768px) {
-      overflow: scroll;
-      h3{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #173181;
-        margin-bottom: 12px;
-        padding-left: 20px;
-        position: relative;
-        display: block;
-        &:after{
-          content: '';
-          display: inline-block;
-          width: 12px;
-          height: 12px;
-          position: absolute;
-          left: 0;
-          top: 50%;
-          transform: translate(0, -50%);
-          background-color: #9BA5B7;
-        }
-      }
-    }
     ul{
       padding-left: 0;
       list-style: none;
@@ -934,6 +898,53 @@ a:hover .material-icons{
               display: inline-block;
             }
           }
+        }
+      }
+    }
+    h3{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #173181;
+      margin-bottom: 12px;
+      padding-left: 20px;
+      position: relative;
+      display: none;
+      .providers__link{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0,-50%);
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        .material-icons{
+          font-size: 14px;
+          color: #46A088;
+        }
+      }
+      &:after{
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-color: #9BA5B7;
+      }
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+    .providers__column__item{
+      max-height: 200px;
+      overflow: scroll;
+      @media (max-width: 768px){
+        max-height: 100%;
+        .providers__column__scroll{
+          width: 1000px;
         }
       }
     }
