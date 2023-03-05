@@ -849,8 +849,35 @@ a:hover .material-icons{
         padding-right: 16px;
         margin-bottom: 16px;
         position: relative;
-        a{
+        a.adress{
           display: none;
+        }
+        a.eyetooltip{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #173181;
+          color: #fff;
+          text-align: center;
+          padding-top: 5px;
+          z-index: 3;
+          display: block;
+          opacity: 0;
+          transition: .5s;
+          font-size: 12px;
+          line-height: 14px;
+          .material-icons{
+            font-size: 14px;
+            margin-right: 6px;
+            font-family: 'Material Symbols outlined';
+          }
+        }
+        &:hover{
+          a.eyetooltip{
+            opacity: 1;
+          }
         }
         &:last-child{
           margin-bottom: 0;
@@ -864,6 +891,7 @@ a:hover .material-icons{
           display: inline-block;
           width: 8px;
           height: 100%;
+          z-index: 2;
         }
         img{
           max-width: 100%;
@@ -884,7 +912,13 @@ a:hover .material-icons{
           img{
             margin-bottom: 5px;
           }
-          a{
+          &:hover{
+            a.eyetooltip{
+              display: none;
+              opacity: 0;
+            }
+          }
+          a.adress{
             display: block;
             font-weight: 500;
             font-size: 12px;
