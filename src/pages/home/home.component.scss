@@ -816,7 +816,7 @@ a:hover .material-icons{
         a.adress{
           display: none;
         }
-        a.eyetooltip{
+        .eyetooltip{
           position: absolute;
           top: 0;
           left: 0;
@@ -832,6 +832,7 @@ a:hover .material-icons{
           transition: .5s;
           font-size: 12px;
           line-height: 14px;
+          cursor: pointer;
           .material-icons{
             font-size: 14px;
             margin-right: 6px;
@@ -839,7 +840,7 @@ a:hover .material-icons{
           }
         }
         &:hover{
-          a.eyetooltip{
+          .eyetooltip{
             opacity: 1;
           }
         }

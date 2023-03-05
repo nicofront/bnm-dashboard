@@ -43,3 +43,26 @@ body {
 .h-m--0 {
   margin: 0;
 }
+
+.tooltip-simple{
+  background: #173181;
+  font-size: 14px;
+  line-height: 20px;
+  width: 252px;
+  padding: 16px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.dashmodal .modal-flexible__body{
+  transform: translate(-50%,0%);
+}
+
+.dashtooltip{
+  padding: 0px !important;
+  background: #173181 !important; 
+}
+
+.modal-flexible__footer{
+  display: none;
+}
