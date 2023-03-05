@@ -74,8 +74,50 @@ a:hover .material-icons{
   }
 }
 
+.breadcrumbs{
+  ul{
+    padding: 0;
+    li{
+      display: inline-block;
+      padding-right: 20px;
+      position: relative;
+      &:after{
+        content: "arrow_forward_ios";
+        color: #173181;
+        position: absolute;
+        right: 7px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        font-family: 'Material Icons';
+        width: 5px;
+        height: 8px;
+        font-size: 5px;
+      }
+      &:last-child{
+        &:after{
+          display: none;
+        }
+      }
+      a, p{
+        font-size: 14px;
+        line-height: 16.4px;
+        color: #173181;
+        margin: 0;
+      }
+      a{
+        color: #46A088;
+        text-decoration: underline;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
 .m-section-header {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
   h1{
@@ -83,6 +125,28 @@ a:hover .material-icons{
     font-size: 33px;
     line-height: 39px;
     font-weight: 700;
+    &.title-back{
+      margin-left: 30px;
+      position: relative;
+      a{
+        display: inline-block;
+        position: absolute;
+        right: 100%;
+        color: #173181;  
+        margin-right: 12px;
+        width: 16px;
+        height: 16px;
+        .material-icons{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  h3{
+    margin: 0;
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 400;
   }
   img {
     margin-right: 10px;
