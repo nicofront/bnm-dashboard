@@ -19,3 +19,28 @@
   	font-family: 'Material Icons';
   }
 }
+
+.providers__section{
+	.providers__column{
+		&.providers__column1{
+		  h3:after, ul li:after{
+		      background-color: #357B99;
+		  }
+		}
+		&.providers__column2{
+		  h3:after, ul li:after{
+		      background-color: #4C97B7;
+		  }
+		}
+		&.providers__column3{
+		  h3:after, ul li:after{
+		      background-color: #83C0DA;
+		  }
+		}
+		&.providers__column4{
+		  h3:after, ul li:after{
+		      background-color: #B8EAFF;
+		  }
+		}
+	}
+}

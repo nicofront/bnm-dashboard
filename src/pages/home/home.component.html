@@ -53,7 +53,7 @@
         <div class="card-my-plan__left m-flex m-flex-main" id="mainbox">
           <div class="m-section-plan">
             <div class="card-plan__header sitebg">
-              <strong class="card-plan__title">Mi Plan <span class="material-icons material-tooltip md-18">&#xe887;</span>
+              <strong class="card-plan__title">Mi Plan <span class="material-icons material-tooltip md-18" (click)="modalOne.openModal()">&#xe887;</span>
               </strong>
               <div class="m-title">Salud Preferente Lite Ultra AB/204</div>
               <div class="m-flex">
@@ -309,14 +309,14 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
 
           <div class="providers__section">
             <div class="row">
-              <div class="col-md-3 providers__column">
+              <div class="col-md-3 providers__column providers__column1">
                 <h3 class="textcolor">
                   Prestadores con cobertura al 100%
                   <a href="/providers" class="providers__link">
                     <span class="material-icons linkcolor">&#xe5e1;</span>
                   </a>
                 </h3>
-                <div class="providers__column__item">
+                <div class="providers__column__item providers">
                   <div class="providers__column__scroll">
                     <ul>
                       <li>
@@ -373,11 +373,11 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 providers__column">
+              <div class="col-md-3 providers__column providers__column2">
                 <h3 class="textcolor">
                   Prestadores con cobertura al 80%
                 </h3>
-                <div class="providers__column__item">
+                <div class="providers__column__item providers">
                   <div class="providers__column__scroll">
                     <ul>
                       <li>
@@ -414,11 +414,11 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 providers__column">
+              <div class="col-md-3 providers__column providers__column3">
                 <h3 class="textcolor">
                   Prestadores con cobertura al 70%
                 </h3>
-                <div class="providers__column__item">
+                <div class="providers__column__item providers">
                   <div class="providers__column__scroll">
                     <ul>
                       <li>
@@ -445,11 +445,11 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 providers__column">
+              <div class="col-md-3 providers__column providers__column4">
                 <h3 class="textcolor">
                   Prestadores con cobertura al 50%
                 </h3>
-                <div class="providers__column__item">
+                <div class="providers__column__item providers">
                   <div class="providers__column__scroll">
                     <ul>
                       <li>

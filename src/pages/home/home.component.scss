@@ -941,62 +941,10 @@ a:hover .material-icons{
   .providers__section{
     .row{
       .providers__column{
-        &:nth-child(1){
-          h3{
-            &:after{
-              background-color: #2D816B;
-            }
-          }
-          ul{
-            li{
-              &:after{
-                background-color: #2D816B;
-              }
-            }
-          }
-        }
-        &:nth-child(2){
-          h3{
-            &:after{
-              background-color: #46A088;
-            }
-          }
-          ul{
-            li{
-              &:after{
-                background-color: #46A088;
-              }
-            }
-          }
-        }
-        &:nth-child(3){
-          h3{
-            &:after{
-              background-color: #82C6B2;
-            }
-          }
-          ul{
-            li{
-              &:after{
-                background-color: #82C6B2;
-              }
-            }
-          }
-        }
         &:nth-child(4){
-          h3{
-            &:after{
-              background-color: #BAEDDD;
-            }
-          }
           ul{
             border-bottom: none;
             margin-bottom: 0;
-            li{
-              &:after{
-                background-color: #BAEDDD;
-              }
-            }
           }
         }
       }
@@ -1011,7 +959,7 @@ a:hover .material-icons{
         &:last-child{
           h3{
             &:after{
-              background-color: #BAEDDD;
+              background-color: #9BA5B7;
             }
           }
           ul{
@@ -1019,7 +967,7 @@ a:hover .material-icons{
             margin-bottom: 0;
             li{
               &:after{
-                background-color: #BAEDDD;
+                background-color: #9BA5B7;
               }
             }
           }
