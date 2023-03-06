@@ -54,11 +54,18 @@ body {
 
 .dashtooltip{
   padding: 0px !important;
-  background: #173181 !important; 
+}
+
+// Tooltip Vidatres
+.tooltip-simple, .tooltip-table{
+  background: #173181;
+}
+// Tooltip Banmedica
+.tooltip-simple, .tooltip-table{
+  background: #AE1A21;
 }
 
 .tooltip-simple{
-  background: #173181;
   font-size: 14px;
   line-height: 20px;
   width: 252px;
@@ -68,7 +75,6 @@ body {
 }
 
 .tooltip-table{
-  background: #173181;
   font-size: 14px;
   line-height: 20px;
   width: 252px;
