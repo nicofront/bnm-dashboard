@@ -699,7 +699,6 @@ a:hover .material-icons{
         th{
           background-color: #EBEBEB;
           text-align: right;
-          color: #173181;
           padding: 16px 24px;
           &:first-child{
             text-align: left;
@@ -712,7 +711,6 @@ a:hover .material-icons{
         td{
           text-align: right;
           vertical-align: middle;
-          color: #173181;
           padding: 11px 16px;
           img{
             max-height: 29px;
@@ -810,7 +808,6 @@ a:hover .material-icons{
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: #173181;
           color: #fff;
           text-align: center;
           padding-top: 5px;
@@ -1090,23 +1087,42 @@ a:hover .material-icons{
     border-bottom: 2px solid #173181;
     margin-top: 0;
     margin-bottom: 18px;
+    @media (max-width: 992px) {
+      font-size: 19px;
+      line-height: 22px;
+    }
   }
   .canvas__tope{
     margin: 0;
     margin-bottom: 13px;
     font-size: 19px;
-    line-height: 100.69%;
+    line-height: 22px;
+    @media (max-width: 992px) {
+      font-size: 16px;
+    }
     strong{
       font-weight: 700;
     }
     span{
-      font-size: 22px;
-      margin-left: 5px;
       &.green{
         color: #46a088;
       }
       &.red{
         color: #FF0000;
+      }
+      &.linkcolor{
+        display: none;
+        @media (max-width: 992px) {
+          display: inline-block;
+        }
+      }
+      &.material-icons{
+        font-size: 22px;
+        margin-left: 5px;
+        margin-right: 5px;
+        @media (max-width: 992px) {
+          font-size: 16px;
+        }
       }
     }
   }
