@@ -4,11 +4,19 @@ import { ChartConfiguration } from 'chart.js';
 import { Tab } from 'src/components/tabs/tabs.types';
 import { ViewChild } from '@angular/core';
 
+
+// @Component({
+//   selector: 'app-home',
+//   templateUrl: './home.component.html',
+//   styleUrls: ['./home.component.scss', './sitebanmedica.scss']
+// })
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss', './sitevidatres.scss']
 })
+
 export class HomeComponent {
   public barChartLegend = false;
   public barChartPlugins = [];
