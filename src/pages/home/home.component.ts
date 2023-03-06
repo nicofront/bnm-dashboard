@@ -4,18 +4,19 @@ import { ChartConfiguration } from 'chart.js';
 import { Tab } from 'src/components/tabs/tabs.types';
 import { ViewChild } from '@angular/core';
 
-
-// @Component({
-//   selector: 'app-home',
-//   templateUrl: './home.component.html',
-//   styleUrls: ['./home.component.scss', './sitebanmedica.scss']
-// })
-
+// Estilos Banmedica
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss', './sitevidatres.scss']
+  styleUrls: ['./home.component.scss', './sitebanmedica.scss']
 })
+
+// Estilos Vidatres
+// @Component({
+//   selector: 'app-home',
+//   templateUrl: './home.component.html',
+//   styleUrls: ['./home.component.scss', './sitevidatres.scss']
+// })
 
 export class HomeComponent {
   public barChartLegend = false;
@@ -46,13 +47,29 @@ export class HomeComponent {
     },
   ];
 
+  // chart Vidatres
+  // public barChartData: ChartConfiguration<'bar'>['data'] = {
+  //   labels: ['', '', '', ''],
+  //   datasets: [
+  //     {
+  //       data: [100, 80, 70, 50],
+  //       label: '',
+  //       backgroundColor: ['#2d816b', '#46a088', '#82c6b2', '#BAEDDD'],
+  //       barPercentage: 1.0,
+  //       categoryPercentage: 1.0,
+  //     },
+  //   ],
+  // };
+
+
+  // chart Banmedica
   public barChartData: ChartConfiguration<'bar'>['data'] = {
     labels: ['', '', '', ''],
     datasets: [
       {
         data: [100, 80, 70, 50],
         label: '',
-        backgroundColor: ['#2d816b', '#46a088', '#82c6b2', '#BAEDDD'],
+        backgroundColor: ['#357B99', '#4C97B7', '#83C0DA', '#B8EAFF'],
         barPercentage: 1.0,
         categoryPercentage: 1.0,
       },
