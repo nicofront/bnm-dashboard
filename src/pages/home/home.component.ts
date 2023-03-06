@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { ChartConfiguration } from 'chart.js';
 
 import { Tab } from 'src/components/tabs/tabs.types';
+import { ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  styleUrls: ['./home.component.scss', './sitebanmedica.scss']
 })
 export class HomeComponent {
   public barChartLegend = false;

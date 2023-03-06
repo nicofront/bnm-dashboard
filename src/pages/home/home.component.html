@@ -36,8 +36,8 @@
 <div class="container">
 
   <section class="m-flex m-section-header">
-    <h1 class="color-text-bl">Sácale provecho a tu plan</h1>
-    <a href="" class="m-flex link">
+    <h1 class="textcolor">Sácale provecho a tu plan</h1>
+    <a href="" class="m-flex link linkcolor">
       <span class="material-icons md-18">&#xf090;</span>
       <span class="section-header__download-txt">Descargar dashboard</span>
     </a>
@@ -59,7 +59,7 @@
                 </div>
               </div>
             </div>
-            <div class="card-plan__footer">
+            <div class="card-plan__footer sitebg">
               <div class="card-plan__left">
                 <p class="card-plan__footer-label">Tope general anual por beneficiario</p>
                 <p class="card-plan__footer-value">9.500 UF</p>
@@ -71,7 +71,7 @@
             </div>
             <div class="plan__toggle-box">
               <a class="plan__toggle" (click)="toggleDocuments()">
-                <p>
+                <p class="textcolor">
                   {{ !isDocuemntsVisible ? 'VER DOCUMENTOS A DESCARGAR' : 'OCULTAR DOCUMENTOS A DESCARGAR' }}
                 </p>
                 <img
@@ -85,7 +85,7 @@
         </div>
         <div class="card-my-plan__right" *ngIf="isDocuemntsVisible">
           <div class="card-my-plan__links">
-            <div class="card-my-plan__link">
+            <div class="card-my-plan__link linkcolor">
               <a href="#">
                 <span class="material-icons md-18">&#xf090;</span>
                 <span class="card-my-plan__link-label">
@@ -94,7 +94,7 @@
               </a>
               <span tooltip="<div class='tooltip-simple'>Conoce las coberturas, topes, prestadores y condiciones específicas de tu plan de salud.</div>" [options]="toolOptions" class="material-icons material-tooltip md-18">&#xe887;</span>
             </div>
-            <div class="card-my-plan__link">
+            <div class="card-my-plan__link linkcolor">
               <a href="#">
                 <span class="material-icons md-18">&#xf090;</span>
                 <span class="card-my-plan__link-label">
@@ -103,7 +103,7 @@
               </a>
               <span tooltip="<div class='tooltip-simple'>Conoce las coberturas de tu plan expresadas en montos.</div>" [options]="toolOptions" class="material-icons material-tooltip md-18">&#xe887;</span>
             </div>
-            <div class="card-my-plan__link">
+            <div class="card-my-plan__link linkcolor">
               <a href="">
                 <span class="material-icons md-18">&#xf090;</span>
                 <span class="card-my-plan__link-label">
@@ -120,12 +120,12 @@
       <div class="card-monthly-payment__header">
         <img src="../assets/svg/monthly_payment.svg" /><br />
         <div>
-          <div class="card-monthly-payment__title">Pago mensual</div>
-          <div class="m-amount">$ 199.248 / UF 6,65</div>
+          <div class="card-monthly-payment__title textcolor">Pago mensual</div>
+          <div class="m-amount textcolor">$ 199.248 / UF 6,65</div>
         </div>
       </div>
       <div class="card-monthly-payment__bottom">
-        <a href="" class="link">
+        <a href="" class="link linkcolor">
           <span class="link__label">
             Ver detalle
           </span>
@@ -138,7 +138,7 @@
   <section class="m-flex m-content-plans">
     <div class="section--right section-2--wrapper">
       <div class="providers__wrapper">
-        <h3 class="card-title h-m--0">Prestadores preferentes</h3>
+        <h3 class="card-title h-m--0 textcolor">Prestadores preferentes</h3>
         <ul class="providers__list">
           <li class="providers__item">
             <img src="../assets/img/alemana.png" alt="" />
@@ -178,7 +178,7 @@
           </li>
         </ul>
         <div class="link-see-more__wrapper">
-          <a href="/providers" class="link-see-more">
+          <a href="/providers" class="link-see-more linkcolor">
             <div class="link__label">Ver todos mis prestadores preferentes</div>
             <img src="../assets/svg/arrow_forward.svg" />
           </a>
@@ -189,12 +189,12 @@
         <div class="card-surplus__header">
           <img src="../assets/svg/my_surplus.svg" /><br />
           <div class="rigth">
-            <div class="card-surplus__title">Mis Excedentes</div>
-            <div class="m-amount">$ 199.248</div>
+            <div class="card-surplus__title textcolor">Mis Excedentes</div>
+            <div class="m-amount textcolor">$ 199.248</div>
           </div>
         </div>
         <div class="link-see-more__wrapper">
-          <a href="" class="link-see-more">
+          <a href="" class="link-see-more linkcolor">
             <div href="" class="link__label">Usar mis excedentes</div>
             <img src="../assets/svg/arrow_forward.svg" />
           </a>
@@ -210,7 +210,7 @@
           </div>
         </div>
         <div class="card-monthly-payment__bottom">
-          <div>Ver detalle</div>
+          <a href="" class="link__label linkcolor">Ver detalle</a>
           <img src="../assets/svg/arrow_forward.svg" />
         </div>
       </div>
@@ -219,15 +219,15 @@
     <div class="c-card m-color-grow-min card-my-bonuses mb--24">
       <div class="h-width--100">
         <div class="card-surplus__top">
-          <div class="card-surplus__title mb--12">Mis bonificaciones</div>
+          <div class="card-surplus__title mb--12 textcolor">Mis bonificaciones</div>
         </div>
         <div class="card-bonuses">
           <div class="card-bonuses__img">
             <img src="../assets/svg/kinesiology.svg" />
           </div>
           <span>
-            <p class="card-bonuses__label mt--0 mb--5">Kinesiología</p>
-            <p class="card-bonuses__value">4 sesiones</p>
+            <p class="card-bonuses__label mt--0 mb--5 textcolor">Kinesiología</p>
+            <p class="card-bonuses__value textcolor">4 sesiones</p>
           </span>
         </div>
         <span class="card-bonuses__line"></span>
@@ -236,15 +236,15 @@
             <img src="../assets/svg/frames_crystals.svg" />
           </div>
           <span>
-            <p class="card-bonuses__label mt--0 mb--0">Marcos y cristales</p>
+            <p class="card-bonuses__label mt--0 mb--0 textcolor">Marcos y cristales</p>
           </span>
         </div>
       </div>
-      <div class="m-text-info-silver color-text-bl card-bonuses__subtitle">Última actualización hace dos días</div>
+      <div class="m-text-info-silver color-text-bl textcolor card-bonuses__subtitle">Última actualización hace dos días</div>
     </div>
   </section>
 
-  <section class="m-content-card m-color-grow-sub color-text-bl bg-color-lgrey">
+  <section class="m-content-card textcolor m-color-grow-sub color-text-bl bg-color-lgrey">
     <div class="m-section-my-benefits-label mb--24">Mis prestaciones</div>
     <bm-tabs [tabs]="tabs" (selectedTab)="selectTab($event)"></bm-tabs>
     <div class="tab-content-wrapper" *ngIf="activedTab === 0">
@@ -278,7 +278,7 @@
       <div class="m-section-canvas section-canvas row">
         <div class="canvas1 canvas col-md-8">
           <div class="canvas__head">
-            <h3 class="canvas__title">
+            <h3 class="canvas__title textcolor">
               Cobertura preferente
             </h3>
             <p class="canvas__tope">
@@ -306,10 +306,10 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
           <div class="providers__section">
             <div class="row">
               <div class="col-md-3 providers__column">
-                <h3>
+                <h3 class="textcolor">
                   Prestadores con cobertura al 100%
                   <a href="/providers" class="providers__link">
-                    <span class="material-icons">&#xe5e1;</span>
+                    <span class="material-icons linkcolor">&#xe5e1;</span>
                   </a>
                 </h3>
                 <div class="providers__column__item">
@@ -320,7 +320,7 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                         <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
                         </div>
-                        <a href="" class="adress">
+                        <a href="" class="adress linkcolor">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
                         </a>
@@ -330,7 +330,7 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                         <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
                         </div>
-                        <a href="" class="adress">
+                        <a href="" class="adress linkcolor">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
                         </a>
@@ -340,7 +340,7 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                         <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
                         </div>
-                        <a href="" class="adress">
+                        <a href="" class="adress linkcolor">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
                         </a>
@@ -350,7 +350,7 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                         <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
                         </div>
-                        <a href="" class="adress">
+                        <a href="" class="adress linkcolor">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
                         </a>
@@ -360,7 +360,7 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                         <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
                         </div>
-                        <a href="" class="adress">
+                        <a href="" class="adress linkcolor">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
                         </a>
@@ -370,7 +370,7 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                 </div>
               </div>
               <div class="col-md-3 providers__column">
-                <h3>
+                <h3 class="textcolor">
                   Prestadores con cobertura al 80%
                 </h3>
                 <div class="providers__column__item">
@@ -381,7 +381,7 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                         <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
                         </div>
-                        <a href="" class="adress">
+                        <a href="" class="adress linkcolor">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
                         </a>
@@ -391,7 +391,7 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                         <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
                         </div>
-                        <a href="" class="adress">
+                        <a href="" class="adress linkcolor">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
                         </a>
@@ -401,7 +401,7 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                         <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
                         </div>
-                        <a href="" class="adress">
+                        <a href="" class="adress linkcolor">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
                         </a>
@@ -411,7 +411,7 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                 </div>
               </div>
               <div class="col-md-3 providers__column">
-                <h3>
+                <h3 class="textcolor">
                   Prestadores con cobertura al 70%
                 </h3>
                 <div class="providers__column__item">
@@ -422,7 +422,7 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                         <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
                         </div>
-                        <a href="" class="adress">
+                        <a href="" class="adress linkcolor">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
                         </a>
@@ -432,7 +432,7 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                         <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
                         </div>
-                        <a href="" class="adress">
+                        <a href="" class="adress linkcolor">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
                         </a>
@@ -442,7 +442,7 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                 </div>
               </div>
               <div class="col-md-3 providers__column">
-                <h3>
+                <h3 class="textcolor">
                   Prestadores con cobertura al 50%
                 </h3>
                 <div class="providers__column__item">
@@ -453,7 +453,7 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
                         <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip">
                           <span class="material-icons">&#xe8f4;</span>Ver detalle
                         </div>
-                        <a href="" class="adress">
+                        <a href="" class="adress linkcolor">
                           <span class="material-icons">&#xe0c8;</span>
                           Ver ubicación
                         </a>
@@ -509,7 +509,7 @@ Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope
         </div>
       </div>
     </div>
-    <p class="m-content-card-update mt--0 mb--0">
+    <p class="m-content-card-update textcolor mt--0 mb--0">
       Última actualización hace dos días
     </p>
   </section>
