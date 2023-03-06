@@ -99,8 +99,12 @@ export class HomeComponent {
     },
   };
 
+
   public toolOptions = {
       'placement': 'top',
+      'trigger' : 'click',
+      'maxWidth' : '500px',
+      'tooltipClass' : 'dashtooltip',
       'showDelay': 300
   }
 
