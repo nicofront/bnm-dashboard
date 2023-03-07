@@ -8,14 +8,14 @@ import { ViewChild } from '@angular/core';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss', './sitebanmedica.scss']
+  styleUrls: ['./sitebanmedica.scss']
 })
 
 // Estilos Vidatres
 // @Component({
 //   selector: 'app-home',
 //   templateUrl: './home.component.html',
-//   styleUrls: ['./home.component.scss', './sitevidatres.scss']
+//   styleUrls: ['./sitevidatres.scss']
 // })
 
 export class HomeComponent {
