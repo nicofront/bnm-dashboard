@@ -8,8 +8,9 @@ import { AppComponent } from './app.component';
 import { NgChartsModule } from 'ng2-charts';
 import { TabsModule } from 'src/components/tabs/tabs.module';
 import { HomeComponent } from 'src/pages/home/home.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule, TooltipModule, NgChartsModule, TabsModule],
   providers: [],
   bootstrap: [AppComponent],
