@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.cfooter-wrapper{
+	padding: 0 15px;
+	.cfooter{
+		padding: 24px 15px;
+		width: 1280px;
+		max-width: 100%;
+		margin: 0 auto;
+		text-align: right;
+		.cfooter__content{
+			display: inline-block;
+			font-family: 'Poppins';
+			.cfooter__title{
+				color: #009845;
+				font-size: 22.75px;
+				line-height: 25px;
+				margin: 0;
+				font-weight: 700;
+				@media (max-width:576px){
+					font-size: 15.75px;
+					line-height: 18.9px;
+				}
+			}
+			.cfooter__phone{
+				color: #53565a;
+				text-decoration: none;
+				font-size: 22.75px;
+				line-height: 25px;
+				margin: 0;
+				font-weight: 700;
+				&:hover{
+					text-decoration: underline;
+				}
+				@media (max-width:576px){
+					font-size: 15.75px;
+					line-height: 18.9px;
+				}
+			}
+		}
+	}
+}

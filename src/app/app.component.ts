@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ChartConfiguration } from 'chart.js';
 import { Tab } from 'src/components/tabs/tabs.types';
+import { Cfooter } from 'src/components/cfooter/cfooter.types';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
