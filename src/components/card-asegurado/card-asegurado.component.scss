@@ -8,6 +8,18 @@
 		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
 		border-radius: 10px;
 		padding: 34px;
+		.card-asegurado__profile{
+			display: inline-block;
+			border-radius: 50%;
+			overflow: hidden;
+			.card-asegurado__profile__img{
+				display: inline-block;
+				width: 80px;
+				height: 80px;
+				background: grey;
+				max-width: 100%;
+			}
+		}
 		.card-asegurado__name{
 			color: #53565A;
 			font-size: 23px;
