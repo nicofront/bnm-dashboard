@@ -1,14 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .card-asegurado-wrapper{
 	padding: 0 15px;
+	font-family: 'Poppins', sans-serif;
 	.card-asegurado{
 		background: #FFFFFF;
 		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
 		border-radius: 10px;
 		padding: 34px;
 		.card-asegurado__name{
-
+			color: #53565A;
+			font-size: 23px;
+			line-height: 30px;
+			font-weight: 700;
+			margin: 0;
+		}
+		.card-asegurado__label, .card-asegurado__value{
+			font-size: 14px;
+			color: #53565A;
+			margin: 0;
+		}
+		.card-asegurado__label{
+			line-height: 15px;
+			font-weight: 700;
+		}
+		.card-asegurado__value{
+			line-height: 20px;
 		}
 	}
 }
