@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 .card-asegurado-wrapper{
 	padding: 0 15px;
@@ -8,17 +8,55 @@
 		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
 		border-radius: 10px;
 		padding: 34px;
+		padding-bottom: 0;
+		margin-bottom: 30px;
+		.card-asegurado__edit{
+			border-top: 1px solid #CCCCCC;
+			padding-bottom: 34px;
+			display: none;
+		}
+		.card-asegurado__content{
+			display: flex;
+			flex-wrap: wrap;
+			padding-bottom: 34px;
+		}
 		.card-asegurado__profile{
-			display: inline-block;
-			border-radius: 50%;
-			overflow: hidden;
-			.card-asegurado__profile__img{
+			display: block;
+			width: 20%;
+			.card-asegurado__profile__content{
+				position: relative;
 				display: inline-block;
-				width: 80px;
-				height: 80px;
-				background: grey;
-				max-width: 100%;
+				.card-asegurado__profile__img{
+					display: inline-block;
+					width: 80px;
+					height: 80px;
+					background: #f2f2f2;
+					max-width: 100%;
+					border-radius: 50%;
+				}
+				.card-asegurado__profile__edit{
+					background: #009845;
+					width: 24px;
+					height: 24px;
+					display: inline-block;
+					cursor: pointer;
+					position: absolute;
+					border-radius: 50%;
+					bottom: 0;
+					right: 0;
+				}
 			}
+		}
+		.card-asegurado__data{
+			width: 80%;
+			padding-right: 30px;
+		}
+		.card-asegurado__info{
+			display: flex;
+		}
+		.card-asegurado__item{
+			padding-right: 30px;
+			width: 20%;
 		}
 		.card-asegurado__name{
 			color: #53565A;
@@ -26,6 +64,23 @@
 			line-height: 30px;
 			font-weight: 700;
 			margin: 0;
+			padding-bottom: 20px;
+			position: relative;
+			.card-asegurado__data__edit{
+				position: absolute;
+				right: 0;
+				top: 0;
+				display: inline-block;
+				font-size: 14px;
+				line-height: 21px;
+				color: #008E41;
+				font-weight: 500;
+				text-decoration: underline;
+				transition: .5s;
+				&:hover{
+					text-decoration: none;
+				}
+			}
 		}
 		.card-asegurado__label, .card-asegurado__value{
 			font-size: 14px;
