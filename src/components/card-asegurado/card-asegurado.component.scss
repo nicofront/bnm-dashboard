@@ -24,8 +24,8 @@
 		}
 		.card-asegurado__edit{
 			position: absolute;
-			right: 0;
-			top: 0;
+			right: 40px;
+			top: 36px;
 			a{
 				display: inline-block;
 				font-size: 14px;
@@ -35,6 +35,7 @@
 				text-decoration: underline;
 				transition: .5s;
 				padding: 20px;
+				padding-top: 0;
 			}
 			&:hover{
 				text-decoration: none;
@@ -50,6 +51,7 @@
 			border-top: 1px solid #CCCCCC;
 			padding-bottom: 33px;
 			display: none;
+			background: red;
 		}
 		.card-asegurado__content{
 			display: flex;
@@ -106,9 +108,6 @@
 		.card-asegurado__info{
 			display: flex;
 			flex-wrap: wrap;
-			@media (max-width: 768px){
-				padding-bottom: 48px;
-			}
 			.card-asegurado__item{
 				padding-right: 15px;
 				padding-bottom: 33px;
