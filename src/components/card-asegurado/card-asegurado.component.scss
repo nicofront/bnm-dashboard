@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.card-asegurado-wrapper{
+	position: relative;
+	padding: 0 15px;
+	width: 1270px;
+	max-width: 100%;
+	margin: 0 auto;
+	margin-top: 60px;
+	font-family: 'Poppins', sans-serif;
+	div{
+		font-family: 'Poppins', sans-serif;
+	}
+	.card-message{
+		position: fixed;
+		z-index: 5;
+		left: 50%;
+		top: 50vh;
+		transform: translate(-50%, -50%);
+		transition: .5s;
+		display: inline-block;
+		font-size: 16px;
+		line-height: 24px;
+		color: #FFFFFF;
+		padding: 16px 30px;
+		padding-right: 40px;
+		background: #2ECC71;
+		box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
+		border-radius: 6px;
+		cursor: pointer;
+		i{
+			font-size: 16px;
+			position: absolute;
+			right: 16px;
+			top: 50%;
+			transform: translateY(-50%);
+			color: #fff;
+		}
+		&.card-message--error{
+			background: #FF0000;
+		}
+	}
+	.card-asegurado{
+		background: #FFFFFF;
+		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+		border-radius: 10px;
+		padding: 33px 34px;
+		padding-bottom: 0;
+		margin-bottom: 30px;
+		position: relative;
+		@media (max-width: 768px){
+			padding: 52px 24px 0;
+			margin-bottom: 74px;
+		}
+		.card-asegurado__edit{
+			position: absolute;
+			right: 40px;
+			top: 36px;
+			.trigger{
+				display: inline-block;
+				font-size: 14px;
+				line-height: 21px;
+				color: #008E41;
+				font-weight: 500;
+				text-decoration: underline;
+				transition: .5s;
+				padding-bottom: 20px;
+				padding-left: 25px;
+				position: relative;
+				cursor: pointer;
+				i{
+					left: 0;
+					top: 0%;
+					font-size: 18px;
+					position: absolute;
+					color: #008E41;
+				}
+				&:hover{
+					text-decoration: none;
+				}
+			}
+			@media (max-width: 1024px){
+				position: static;
+				display: block;
+				width: 100%;
+				text-align: center;
+			}
+		}
+		&.editmode{
+			.card-asegurado__item--edit{
+				display: none;
+			}
+			.card-asegurado__editform{
+				display: block;
+			}
+		}
+		.card-asegurado__editform{
+			border-top: 1px solid #CCCCCC;
+			padding-top: 46px;
+			padding-bottom: 33px;
+			display: none;
+			.form-group{
+				margin-bottom: 36px;
+				input{
+					&:focus{
+						border-color: #008E41;
+					}
+				}
+				small{
+					color: #ED2C2D;
+				}
+			}
+			.btn{
+				border-color: #008E41;
+				color: #008E41;
+			}
+			.btn-primary{
+				background-color: #008E41;
+				color: #fff;
+				@media (max-width: 768px){
+					margin-bottom: 24px;
+				}
+			}
+			.btn-outline-secondary{
+				&:hover{
+					background-color: #008E41;	
+				}
+			}
+		}
+		.card-asegurado__content{
+			display: flex;
+			flex-wrap: wrap;
+			@media (max-width: 768px){
+				display: block;
+			}
+		}
+		.card-asegurado__profile{
+			display: block;
+			width: 120px;
+			@media (max-width: 768px){
+				width: 100%;
+				text-align: center;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: translateY(-50%);
+			}
+			.card-asegurado__profile__content{
+				position: relative;
+				display: inline-block;
+				.card-asegurado__profile__img{
+					display: inline-block;
+					width: 80px;
+					height: 80px;
+					background: #f2f2f2;
+					max-width: 100%;
+					border-radius: 50%;
+					@media (max-width: 768px){
+					}
+				}
+				.card-asegurado__profile__edit{
+					background: #009845;
+					width: 24px;
+					height: 24px;
+					display: inline-block;
+					cursor: pointer;
+					position: absolute;
+					border-radius: 50%;
+					bottom: 0;
+					right: 0;
+					i{
+						color: #fff;
+						font-size: 13px;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%,-50%);
+					}
+				}
+			}
+		}
+		.card-asegurado__data{
+			width: calc(100% - 120px);
+			padding-right: 15px;
+			@media (max-width: 768px){
+				width: 100%;
+				padding-right: 0;
+			}
+		}
+		.card-asegurado__info{
+			display: flex;
+			flex-wrap: wrap;
+			.card-asegurado__item{
+				padding-right: 15px;
+				padding-bottom: 33px;
+				width: 20%;
+				&.card-asegurado__item--edit{
+
+				}
+				.card-asegurado__label, .card-asegurado__value{
+					font-size: 14px;
+					color: #53565A;
+					margin: 0;
+				}
+				.card-asegurado__label{
+					line-height: 15px;
+					font-weight: 600;
+					@media (max-width: 768px){
+						font-weight: 500;
+						color: #008E41;
+					}
+				}
+				.card-asegurado__value{
+					line-height: 20px;
+				}
+				@media (max-width: 1024px){
+					width: 32%;
+				}
+				@media (max-width: 768px){
+					width: 100%;
+					padding-right: 0;
+					padding-bottom: 16px;
+				}
+			}
+		}
+		.card-asegurado__name{
+			color: #53565A;
+			font-size: 23px;
+			line-height: 30px;
+			font-weight: 700;
+			margin: 0;
+			padding-bottom: 20px;
+			@media (max-width: 768px){
+				font-size: 16px;
+				line-height: 24px;
+				text-align: center;
+			}
+		}
+	}
+}
