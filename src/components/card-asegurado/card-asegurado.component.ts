@@ -12,4 +12,14 @@ export class CardaseguradoComponent {
   constructor() {
   }
 
+  isActive:boolean = false;
+
+  toggleEdit() {
+  	if(!this.isActive){
+  		this.isActive = true;
+  	}else{
+  		this.isActive = false;
+  	}
+  }
+
 }
