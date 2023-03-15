@@ -34,8 +34,16 @@
 				font-weight: 500;
 				text-decoration: underline;
 				transition: .5s;
-				padding: 20px;
-				padding-top: 0;
+				padding-bottom: 20px;
+				padding-left: 25px;
+				position: relative;
+				i{
+					left: 0;
+					top: 0%;
+					font-size: 18px;
+					position: absolute;
+					color: #008E41;
+				}
 			}
 			&:hover{
 				text-decoration: none;
@@ -49,9 +57,28 @@
 		}
 		.card-asegurado__editform{
 			border-top: 1px solid #CCCCCC;
+			padding-top: 46px;
 			padding-bottom: 33px;
 			display: none;
-			background: red;
+			.form-group{
+				margin-bottom: 36px;
+			}
+			.btn{
+				border-color: #008E41;
+				color: #008E41;
+			}
+			.btn-primary{
+				background-color: #008E41;
+				color: #fff;
+				@media (max-width: 768px){
+					margin-bottom: 24px;
+				}
+			}
+			.btn-outline-secondary{
+				&:hover{
+					background-color: #008E41;	
+				}
+			}
 		}
 		.card-asegurado__content{
 			display: flex;
@@ -94,6 +121,14 @@
 					border-radius: 50%;
 					bottom: 0;
 					right: 0;
+					i{
+						color: #fff;
+						font-size: 13px;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%,-50%);
+					}
 				}
 			}
 		}
@@ -112,6 +147,9 @@
 				padding-right: 15px;
 				padding-bottom: 33px;
 				width: 20%;
+				&.card-asegurado__item--edit{
+
+				}
 				.card-asegurado__label, .card-asegurado__value{
 					font-size: 14px;
 					color: #53565A;
