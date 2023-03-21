@@ -715,6 +715,509 @@
       </div>
     </div>
 
+    <div class="tab-content-wrapper" *ngIf="activedTab === 2">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="m-section-my-benefits-sub">Selecciona una prestación</div>
+          <div class="form-group">
+           <select class="custom-select select2" id="exampleFormControlSelect1">
+            <option>Día Cama (201001)</option>
+            <option>Día Cama (201001)</option>
+           </select>
+           <label for="exampleFormControlSelect1">Acceso Web</label>
+          </div>
+        </div>
+      </div>
+      <div class="m-section-canvas section-canvas row">
+        <div class="canvas1 canvas col-md-8">
+          <div class="canvas__head">
+            <h3 class="canvas__title textcolor">
+              Cobertura preferente
+            </h3>
+            <p class="canvas__tope">
+              <span tooltip="<div class='tooltip-simple'>Monto máximo que cubre la Isapre por cada prestación de salud, indicado en UF o Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">
+                Tope por evento:
+                <span class="material-icons linkcolor md-18">&#xe887;</span>
+              </span>
+              <strong>Sin tope</strong>
+              <span class="material-icons green">&#xe52d;</span>
+            </p>
+            <p class="canvas__tope">
+              <span tooltip="<div class='tooltip-simple'>Monto máximo en pesos que cubre la Isapre dentro de un año por todas las prestaciones, indicado en UF o Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip"> Tope anual: <span class="material-icons linkcolor md-18">&#xe887;</span></span>
+              <strong>Sin tope</strong>
+              <span class="material-icons green">&#xe52d;</span>
+            </p>
+          </div>
+          <canvas
+            baseChart
+            [data]="barChartData"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [type]="'bar'"
+          >
+          </canvas>
+
+          <div class="providers__section">
+            <div class="row">
+              <div class="col-md-3 providers__column providers__column1">
+                <h3 class="textcolor">
+                  Prestadores con cobertura al 100%
+                  <a href="/providers" class="providers__link">
+                    <span class="material-icons linkcolor">&#xe5e1;</span>
+                  </a>
+                </h3>
+                <div class="providers__column__item providers">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/davila.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/vespucio.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/sm.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 providers__column providers__column2">
+                <h3 class="textcolor">
+                  Prestadores con cobertura al 80%
+                </h3>
+                <div class="providers__column__item providers">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/vespucio.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/sm.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 providers__column providers__column3">
+                <h3 class="textcolor">
+                  Prestadores con cobertura al 70%
+                </h3>
+                <div class="providers__column__item providers">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/sm.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 providers__column providers__column4">
+                <h3 class="textcolor">
+                  Prestadores con cobertura al 50%
+                </h3>
+                <div class="providers__column__item providers">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="canvas2 canvas col-md-4">
+          <div class="canvas__head">
+            <h3 class="canvas__title textcolor">
+              Cobertura libre elección
+            </h3>
+            <p class="canvas__tope">
+              <span tooltip="<div class='tooltip-simple'>Monto máximo que cubre la Isapre por cada prestación de salud, indicado en UF o Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope por evento:
+              <span class="material-icons linkcolor md-18">&#xe887;</span></span>
+              <strong>5,5 UF</strong>
+              <span class="material-icons red">&#xe002;</span>
+            </p>
+            <p class="canvas__tope">
+              <span tooltip="<div class='tooltip-simple'>Monto máximo en pesos que cubre la Isapre dentro de un año por todas las prestaciones, indicado en UF o Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope anual: 
+              <span class="material-icons linkcolor md-18">&#xe887;</span></span>
+              <strong>Sin tope</strong>
+              <span class="material-icons green">&#xe52d;</span>
+            </p>
+          </div>
+          <canvas
+            height="310"
+            baseChart
+            [data]="barChartData2"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [type]="'bar'"
+          >
+          </canvas>
+          <div class="providers__section">
+            <div class="row">
+              <div class="col-md-12 providers__column">
+                <div class="providers__column__item">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content-wrapper" *ngIf="activedTab === 3">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="m-section-my-benefits-sub">Selecciona una prestación</div>
+          <div class="form-group">
+           <select class="custom-select select2" id="exampleFormControlSelect1">
+            <option>Día Cama (201001)</option>
+            <option>Día Cama (201001)</option>
+           </select>
+           <label for="exampleFormControlSelect1">Acceso Web</label>
+          </div>
+        </div>
+      </div>
+      <div class="m-section-canvas section-canvas row">
+        <div class="canvas1 canvas col-md-8">
+          <div class="canvas__head">
+            <h3 class="canvas__title textcolor">
+              Cobertura preferente
+            </h3>
+            <p class="canvas__tope">
+              <span tooltip="<div class='tooltip-simple'>Monto máximo que cubre la Isapre por cada prestación de salud, indicado en UF o Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">
+                Tope por evento:
+                <span class="material-icons linkcolor md-18">&#xe887;</span>
+              </span>
+              <strong>Sin tope</strong>
+              <span class="material-icons green">&#xe52d;</span>
+            </p>
+            <p class="canvas__tope">
+              <span tooltip="<div class='tooltip-simple'>Monto máximo en pesos que cubre la Isapre dentro de un año por todas las prestaciones, indicado en UF o Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip"> Tope anual: <span class="material-icons linkcolor md-18">&#xe887;</span></span>
+              <strong>Sin tope</strong>
+              <span class="material-icons green">&#xe52d;</span>
+            </p>
+          </div>
+          <canvas
+            baseChart
+            [data]="barChartData"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [type]="'bar'"
+          >
+          </canvas>
+
+          <div class="providers__section">
+            <div class="row">
+              <div class="col-md-3 providers__column providers__column1">
+                <h3 class="textcolor">
+                  Prestadores con cobertura al 100%
+                  <a href="/providers" class="providers__link">
+                    <span class="material-icons linkcolor">&#xe5e1;</span>
+                  </a>
+                </h3>
+                <div class="providers__column__item providers">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/davila.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/vespucio.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/sm.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 providers__column providers__column2">
+                <h3 class="textcolor">
+                  Prestadores con cobertura al 80%
+                </h3>
+                <div class="providers__column__item providers">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/vespucio.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/sm.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 providers__column providers__column3">
+                <h3 class="textcolor">
+                  Prestadores con cobertura al 70%
+                </h3>
+                <div class="providers__column__item providers">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/sm.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 providers__column providers__column4">
+                <h3 class="textcolor">
+                  Prestadores con cobertura al 50%
+                </h3>
+                <div class="providers__column__item providers">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="canvas2 canvas col-md-4">
+          <div class="canvas__head">
+            <h3 class="canvas__title textcolor">
+              Cobertura libre elección
+            </h3>
+            <p class="canvas__tope">
+              <span tooltip="<div class='tooltip-simple'>Monto máximo que cubre la Isapre por cada prestación de salud, indicado en UF o Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope por evento:
+              <span class="material-icons linkcolor md-18">&#xe887;</span></span>
+              <strong>5,5 UF</strong>
+              <span class="material-icons red">&#xe002;</span>
+            </p>
+            <p class="canvas__tope">
+              <span tooltip="<div class='tooltip-simple'>Monto máximo en pesos que cubre la Isapre dentro de un año por todas las prestaciones, indicado en UF o Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope anual: 
+              <span class="material-icons linkcolor md-18">&#xe887;</span></span>
+              <strong>Sin tope</strong>
+              <span class="material-icons green">&#xe52d;</span>
+            </p>
+          </div>
+          <canvas
+            height="310"
+            baseChart
+            [data]="barChartData2"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [type]="'bar'"
+          >
+          </canvas>
+          <div class="providers__section">
+            <div class="row">
+              <div class="col-md-12 providers__column">
+                <div class="providers__column__item">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <p class="m-content-card-update textcolor mt--0 mb--0">
       Última actualización hace dos días
     </p>
