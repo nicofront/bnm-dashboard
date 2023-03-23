@@ -129,6 +129,7 @@ export class HomeComponent {
 
   public barChartOptions: ChartConfiguration<'bar'>['options'] = {
     responsive: true,
+    maintainAspectRatio: false,
     events: [],
     scales: {
       y: {
