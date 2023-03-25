@@ -1079,6 +1079,19 @@ a:hover .material-icons{
   }
   .canvas__chart{
     height: 450px;
+    &.canvas__chart--none{
+      position: relative;
+    }
+    .canvas__chart__label{
+      position: absolute;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 500;
+      color: #173181;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   .canvas__title{
     font-style: normal;
@@ -1100,8 +1113,10 @@ a:hover .material-icons{
     margin-bottom: 13px;
     font-size: 19px;
     line-height: 22px;
+    min-height: 27px;
     @media (max-width: 992px) {
       font-size: 16px;
+      min-height: 0;
     }
     strong{
       font-weight: 700;

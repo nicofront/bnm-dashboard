@@ -943,7 +943,6 @@
             >
             </canvas>
           </div>
-
           <div class="providers__section">
             <div class="row">
               <div class="col-md-12 providers__column providers__column1">
@@ -1006,6 +1005,96 @@
                           Ver ubicación
                         </a>
                       </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="canvas2 canvas col-md-3 offset-md-1">
+          <div class="canvas__head">
+            <h3 class="canvas__title textcolor">
+              Cobertura libre elección
+            </h3>
+            <p class="canvas__tope">
+              <span tooltip="<div class='tooltip-simple'>Monto máximo que cubre la Isapre por cada prestación de salud, indicado en UF o Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope por evento:
+              <span class="material-icons linkcolor md-18">&#xe887;</span></span>
+              <strong>5,5 UF</strong>
+              <span class="material-icons red">&#xe002;</span>
+            </p>
+            <p class="canvas__tope">
+              <span tooltip="<div class='tooltip-simple'>Monto máximo en pesos que cubre la Isapre dentro de un año por todas las prestaciones, indicado en UF o Veces Arancel (VA).</div>" [options]="toolOptions" class="material-tooltip">Tope anual: 
+              <span class="material-icons linkcolor md-18">&#xe887;</span></span>
+              <strong>Sin tope</strong>
+              <span class="material-icons green">&#xe52d;</span>
+            </p>
+          </div>
+          <div class="canvas__chart">
+            <canvas
+              baseChart
+              [data]="barChartData"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [type]="'bar'"
+            >
+            </canvas>
+          </div>
+          <div class="providers__section">
+            <div class="row">
+              <div class="col-md-12 providers__column">
+                <div class="providers__column__item">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-section-canvas section-canvas row">
+        <div class="canvas1 canvas col-md-3 offset-md-2">
+          <div class="canvas__head">
+            <h3 class="canvas__title textcolor">
+              Cobertura preferente
+            </h3>
+            <p class="canvas__tope">
+            </p>
+            <p class="canvas__tope">
+            </p>
+          </div>
+          <div class="canvas__chart canvas__chart--none">
+            <div class="canvas__chart__label">
+              Sin cobertura <br>
+              preferente
+            </div>
+            <canvas
+              baseChart
+              [data]="barChartData3B"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [type]="'bar'"
+            >
+            </canvas>
+          </div>
+          <div class="providers__section">
+            <div class="row">
+              <div class="col-md-12 providers__column providers__column1">
+                <h3 class="textcolor">
+                  Prestadores con cobertura al 100%
+                  <a href="/providers" class="providers__link">
+                    <span class="material-icons linkcolor">&#xe5e1;</span>
+                  </a>
+                </h3>
+                <div class="providers__column__item providers">
+                  <div class="providers__column__scroll">
+                    <ul>
                     </ul>
                   </div>
                 </div>

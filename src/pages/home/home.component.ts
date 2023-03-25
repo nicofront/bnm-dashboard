@@ -23,6 +23,7 @@ export class HomeComponent {
   public barChartPlugins = [];
   public activedTab = 0;
   public isDocuemntsVisible = false;
+  public barColor0 = '#FFFFFF';
 
   // Colores Banmedica
   public barColor1 = '#357B99';
@@ -121,6 +122,19 @@ export class HomeComponent {
         data: [100],
         label: '',
         backgroundColor: [this.barColor1],
+        barPercentage: 1.0,
+        categoryPercentage: 1.0,
+      },
+    ],
+  };
+
+  public barChartData3B: ChartConfiguration<'bar'>['data'] = {
+    labels: [''],
+    datasets: [
+      {
+        data: [100],
+        label: '',
+        backgroundColor: [this.barColor0],
         barPercentage: 1.0,
         categoryPercentage: 1.0,
       },
