@@ -24,6 +24,7 @@ export class HomeComponent {
   public activedTab = 0;
   public isDocuemntsVisible = false;
   public barColor0 = '#FFFFFF';
+  public barColor0B = '#9BA5B7';
 
   // Colores Banmedica
   public barColor1 = '#357B99';
@@ -135,6 +136,8 @@ export class HomeComponent {
         data: [100],
         label: '',
         backgroundColor: [this.barColor0],
+        borderColor: [this.barColor0B],
+        borderWidth: 1,
         barPercentage: 1.0,
         categoryPercentage: 1.0,
       },
