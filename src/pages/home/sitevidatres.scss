@@ -1,3 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+div,
+span {
+  font-family: Roboto;
+}
+body {
+  margin: 10px auto;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+.mb--0{
+  margin-bottom: 0;
+}
+.mt--0{
+  margin-top: 0;
+}
+.mb--5{
+  margin-bottom: 5px;
+}
+.mb--12 {
+  margin-bottom: 12px;
+}
+.mb--24 {
+  margin-bottom: 24px;
+}
+.mb--32 {
+  margin-bottom: 32px;
+}
+
+.h-width--100 {
+  width: 100%;
+}
+
+.h-none {
+  display: none;
+}
+
+.h-m--0 {
+  margin: 0;
+}
+
 .sitebg{
   background-color: #173181;
 }
