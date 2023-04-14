@@ -1079,6 +1079,7 @@ a:hover .material-icons{
   }
   .canvas__chart{
     height: 450px;
+    display: none;
     &.canvas__chart--none{
       position: relative;
     }
