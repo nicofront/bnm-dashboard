@@ -5,18 +5,18 @@ import { Tab } from 'src/components/tabs/tabs.types';
 import { ViewChild } from '@angular/core';
 
 // Estilos Banmedica
-@Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss', './sitebanmedica.scss']
-})
-
-// Estilos Vidatres
 // @Component({
 //   selector: 'app-home',
 //   templateUrl: './home.component.html',
-//   styleUrls: ['./home.component.scss', './sitevidatres.scss']
+//   styleUrls: ['./home.component.scss', './sitebanmedica.scss']
 // })
+
+// Estilos Vidatres
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss', './sitevidatres.scss']
+})
 
 export class HomeComponent {
   public barChartLegend = false;

@@ -25,7 +25,6 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -70,15 +69,20 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "dashboard:build"
+          },
           "configurations": {
             "production": {
               "browserTarget": "dashboard:build:production"
             },
-            "development": {
-              "browserTarget": "dashboard:build:development"
+            "prod-vida-tres": {
+              "browserTarget": "dashboard:build:prod-vida-tres"
+            },
+            "prod-banmedica": {
+              "browserTarget": "dashboard:build:prod-banmedica"
             }
-          },
-          "defaultConfiguration": "development"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
