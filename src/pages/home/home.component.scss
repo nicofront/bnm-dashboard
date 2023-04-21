@@ -1,6 +1,10 @@
 // .tooltip-simple, .dashtooltip, .tooltip-shadow{
 // }
 
+.highcharts-credits{
+  display: none;
+}
+
 .m-flex {
   display: flex;
   justify-content: space-between;
@@ -1082,7 +1086,7 @@ a:hover .material-icons{
   }
   .canvas__chart{
     height: 450px;
-    display: none;
+    // display: none;
     &.canvas__chart--none{
       position: relative;
     }

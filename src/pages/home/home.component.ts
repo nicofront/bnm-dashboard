@@ -4,6 +4,9 @@ import { ChartConfiguration } from 'chart.js';
 import { Tab } from 'src/components/tabs/tabs.types';
 import { ViewChild } from '@angular/core';
 
+import Highcharts from "highcharts";
+import { Options } from "highcharts";
+
 // Estilos Banmedica
 // @Component({
 //   selector: 'app-home',
@@ -37,6 +40,40 @@ export class HomeComponent {
   // public barColor2 = '#46a088';
   // public barColor3 = '#82c6b2';
   // public barColor4 = '#BAEDDD';
+
+  Highcharts: typeof Highcharts = Highcharts;
+
+  chartOptions: Options = {
+    chart: {
+      type: 'column',
+      height: 300
+    },
+    legend: {
+      enabled: false
+    },
+    yAxis: [{
+      title: {
+        text: 'Gold medals'
+      }
+    }],
+    tooltip: {
+      headerFormat: '<span style="font-size: 33px; color: #173181; font-weight: 800;">{point.y}%</span>',
+      pointFormat: ''
+    },
+    series: [{
+      data: [100],
+      color: this.barColor1,
+    }, {
+      data: [80],
+      color: this.barColor2,
+    }, {
+      data: [70],
+      color: this.barColor3,
+    }, {
+      data: [50],
+      color: this.barColor4,
+    }]
+  };
 
   public tabs = [
     {

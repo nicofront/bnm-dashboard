@@ -4,6 +4,9 @@ import { Tab } from 'src/components/tabs/tabs.types';
 import { Cfooter } from 'src/components/cfooter/cfooter.types';
 import { Cardasegurado } from 'src/components/card-asegurado/card-asegurado.types';
 
+// import Highcharts from "highcharts";
+// import { Options } from "highcharts";
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
