@@ -54,13 +54,18 @@ export class HomeComponent {
     legend: {
       enabled: false
     },
+    xAxis: [{
+      labels: {
+              enabled: false
+          },
+    }],
     yAxis: [{
       title: {
         text: ''
       }
     }],
     tooltip: {
-      headerFormat: '<span style="font-size: 33px; color: #173181; font-weight: 800;">{point.y}%</span>',
+      headerFormat: '<span style="font-size: 20px; color: #173181; display: inline-block; padding-top: 50px; font-weight: 800;">{point.y}%</span>',
       pointFormat: ''
     },
     series: [{
