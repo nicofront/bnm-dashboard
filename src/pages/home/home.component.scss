@@ -46,7 +46,7 @@
   border: 2px solid #ebebeb;
 
   .m-amount {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 26px;
   }
   .m__tilte {
@@ -77,6 +77,235 @@ a:hover .material-icons{
   @media (min-width: 992px) {
     display: inline-block;
     margin-left: 10px;
+  }
+}
+
+.chart-lobby{
+  text-align: center;
+  .chart-lobby-title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    margin-top: 36px;
+    margin-bottom: 8px;
+  }
+  .chart-lobby-text{
+
+  }
+}
+
+.footnote{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  span{
+    font-weight: 600;
+  }
+}
+
+.providers-section{
+  display: flex;
+  column-gap: 24px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  @media (max-width: 991px) {
+    display: block;
+  }
+  .providers-block{
+    background: #fdfdfd;
+    border: 2px solid #ebebeb;
+    border-radius: 10px;
+    padding: 16px 20px 26px;
+    position: relative;
+    margin-bottom: 24px;
+    &.providers-block1{
+      width: 100%;
+    }
+    &.providers-block2{
+      min-width: 300px;
+      .providers-title{
+        margin-bottom: 8px;
+        margin-top: 8px;
+      }
+    }
+    .providers-link{
+      position: absolute;
+      right: 20px;
+      bottom: 16px;
+      display: flex;
+      -moz-column-gap: 5px;
+      column-gap: 5px;
+      a{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration-line: underline;
+        display: inline-block;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    .providers-title{
+      font-family: 'Roboto';
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 22px;
+      margin-bottom: 13px;
+    }
+    .providers-value{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 33px;
+    }
+    .providers-table{
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      @media (max-width: 991px) {
+        margin-bottom: 0;
+      }
+      &.providers-table1 .providers-cell{
+        flex-basis: 100%;
+        text-align: center;
+        p{
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          margin: 0;
+          a{
+            text-decoration: underline;
+            &:hover{
+              text-decoration: none;
+            }
+          }
+        }
+        img{
+          margin-bottom: 12px;
+        }
+      }
+      &.providers-table3 .providers-cell{
+        flex-basis: 33.33333%;
+      }
+      &.providers-table4 .providers-cell{
+        flex-basis: 25%;
+      }
+      &.providers-table5 .providers-cell{
+        flex-basis: 20%;
+      }
+      &.providers-table6 .providers-cell{
+        flex-basis: 16%;
+      }
+      &.providers-table-single{
+        margin-top: 18px;
+        &.providers-table4{
+          @media (max-width: 991px) {
+            .providers-cell{
+              flex-basis: 32%;
+              padding: 16px 0;
+              align-self: end;
+            }
+            .providers-cell-single{
+              flex-basis: 100%;
+              text-align: center;
+              border-bottom: 2px solid #EBEBEB;
+            }
+          }
+        }
+      }
+      @media (max-width: 991px) {
+        &.providers-table3 .providers-cell{
+          flex-basis: 50%;
+        }
+        &.providers-table4 .providers-cell{
+          flex-basis: 50%;
+        }
+        &.providers-table5 .providers-cell{
+          flex-basis: 50%;
+        }
+        &.providers-table6 .providers-cell{
+          flex-basis: 50%;
+        }
+      }
+      .providers-cell{
+        flex-shrink: 0;
+        padding: 0 12px;
+        align-self: center;
+        flex: 1;
+        @media (max-width: 991px) {
+          padding: 12px 0;
+        }
+        img{
+          max-width: 100%;
+          max-height: 34px;
+        }
+        .providers-cell-label{
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 100.69%;
+          margin-bottom: 2px;
+        }
+        .providers-cell-number{
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 100.69%;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 33px;
+          margin: 0;
+          @media (max-width: 991px) {
+            font-size: 19px;
+            line-height: 23px;
+          }
+        }
+        &.providers-cell-single{
+          border-right: 2px solid #EBEBEB;
+          text-align: right;
+          @media (max-width: 991px) {
+            text-align: left;
+            border: none;
+          }
+        }
+        &.providers-cell-default{
+          display: flex;
+          -moz-column-gap: 7px;
+          column-gap: 7px;
+          cursor: pointer;
+          img{
+            height: 24px;
+            width: 24px;
+          }
+          p{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            margin: 0;
+            color: #173181;
+            white-space: nowrap; 
+            width: 85px; 
+            overflow: hidden;
+            text-overflow: ellipsis; 
+          }
+        }
+      }
+    }
   }
 }
 
@@ -123,6 +352,9 @@ a:hover .material-icons{
   margin-bottom: 24px;
   display: flex;
   align-items: center;
+  .link{
+    font-weight: 500; 
+  }
   h1{
     margin: 0;
     font-size: 33px;
@@ -295,7 +527,7 @@ a:hover .material-icons{
     color: #173181;
     margin: auto;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     padding-top: 16px;
     &.sitebg{
       background: #f5f5f5;
@@ -377,15 +609,18 @@ a:hover .material-icons{
   font-weight: 400;
   font-size: 19px;
   line-height: 22px;
-  margin: 10px auto;
+  margin: 8px auto 2px;
 }
 
 .card-monthly-payment__bottom {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   color: #4ba28b;
   display: flex;
   justify-content: flex-end;
+  .link{
+    font-weight: 500;
+  }
   img {
     margin-left: 4px;
     margin-right: 0;
@@ -575,6 +810,7 @@ a:hover .material-icons{
     display: flex;
     column-gap: 10px;
     color: inherit;
+    font-weight: 500;
     .card-my-plan__link-label{
       text-decoration: underline;
     }
@@ -1031,7 +1267,7 @@ a:hover .material-icons{
 .m-content-card {
   border-radius: 6px;
   padding: 24px 20px 70px;
-  margin-bottom: 20px;
+  margin-bottom: 36px;
   position: relative;
   @media (max-width: 840px) {
     padding-right: 0;
@@ -1085,8 +1321,7 @@ a:hover .material-icons{
     padding-bottom: 20px;
   }
   .canvas__chart{
-    height: 450px;
-    // display: none;
+    // height: 360px;
     &.canvas__chart--none{
       position: relative;
     }

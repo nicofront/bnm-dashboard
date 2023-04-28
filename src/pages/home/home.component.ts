@@ -48,12 +48,15 @@ export class HomeComponent {
       type: 'column',
       height: 300
     },
+    title:{
+      text:''
+    },
     legend: {
       enabled: false
     },
     yAxis: [{
       title: {
-        text: 'Gold medals'
+        text: ''
       }
     }],
     tooltip: {
@@ -61,17 +64,43 @@ export class HomeComponent {
       pointFormat: ''
     },
     series: [{
-      data: [100],
+      data: [[0,100]],
       color: this.barColor1,
     }, {
-      data: [80],
+      data: [[0,80]],
       color: this.barColor2,
     }, {
-      data: [70],
+      data: [[0,70]],
       color: this.barColor3,
     }, {
-      data: [50],
+      data: [[0,50]],
       color: this.barColor4,
+    }]
+  };
+
+  chartOptions0: Options = {
+    chart: {
+      type: 'column',
+      height: 300
+    },
+    title:{
+      text:''
+    },
+    legend: {
+      enabled: false
+    },
+    yAxis: [{
+      title: {
+        text: ''
+      }
+    }],
+    tooltip: {
+      headerFormat: '<span style="font-size: 33px; color: #173181; font-weight: 800;">{point.y}%</span>',
+      pointFormat: ''
+    },
+    series: [{
+      data: [[0,100]],
+      color: this.barColor1,
     }]
   };
 
@@ -198,6 +227,13 @@ export class HomeComponent {
       'placement': 'top',
       'trigger' : 'click',
       'maxWidth' : '500px',
+      'tooltipClass' : 'dashtooltip',
+      'showDelay': 300
+  }
+
+  public toolOptions2 = {
+      'placement': 'top',
+      'maxWidth' : '600px',
       'tooltipClass' : 'dashtooltip',
       'showDelay': 300
   }
