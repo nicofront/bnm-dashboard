@@ -43,7 +43,7 @@ export class HomeComponent {
 
   Highcharts: typeof Highcharts = Highcharts;
 
-  chartOptions: Options = {
+  chartOptions4: Options = {
     chart: {
       type: 'column',
       height: 300
@@ -92,7 +92,176 @@ export class HomeComponent {
     }]
   };
 
-  chartOptionsNone: Options = {
+  chartOptions3: Options = {
+    chart: {
+      type: 'column',
+      height: 300
+    },
+    title:{
+      text:''
+    },
+    legend: {
+      enabled: false
+    },
+    xAxis: [{
+      labels: {
+        enabled: false
+      },
+    }],
+    yAxis: [{
+      title: {
+        text: ''
+      }
+    }],
+    tooltip: {
+      useHTML: true,
+      headerFormat: '<span style="font-size: 33px; color: #173181; font-weight: 800;">{point.y}%</span>',
+      pointFormat: ''
+    },
+    plotOptions: {
+      series: {
+        pointPadding: 0,
+        groupPadding: 0,
+        borderWidth: 0,
+        shadow: false
+      }
+    },
+    series: [{
+      data: [[0,100]],
+      color: this.barColor1,
+    }, {
+      data: [[0,80]],
+      color: this.barColor2,
+    }, {
+      data: [[0,70]],
+      color: this.barColor3,
+    }]
+  };
+
+  chartOptions2: Options = {
+    chart: {
+      type: 'column',
+      height: 300
+    },
+    title:{
+      text:''
+    },
+    legend: {
+      enabled: false
+    },
+    xAxis: [{
+      labels: {
+        enabled: false
+      },
+    }],
+    yAxis: [{
+      title: {
+        text: ''
+      }
+    }],
+    tooltip: {
+      useHTML: true,
+      headerFormat: '<span style="font-size: 33px; color: #173181; font-weight: 800;">{point.y}%</span>',
+      pointFormat: ''
+    },
+    plotOptions: {
+      series: {
+        pointPadding: 0,
+        groupPadding: 0,
+        borderWidth: 0,
+        shadow: false
+      }
+    },
+    series: [{
+      data: [[0,100]],
+      color: this.barColor1,
+    }, {
+      data: [[0,80]],
+      color: this.barColor2,
+    }]
+  };
+
+  chartOptions1A: Options = {
+    chart: {
+      type: 'column',
+      height: 300
+    },
+    title:{
+      text:''
+    },
+    legend: {
+      enabled: false
+    },
+    xAxis: [{
+      labels: {
+        enabled: false
+      },
+    }],
+    yAxis: [{
+      title: {
+        text: ''
+      }
+    }],
+    tooltip: {
+      useHTML: true,
+      headerFormat: '<span style="font-size: 33px; color: #173181; font-weight: 800;">{point.y}%</span>',
+      pointFormat: ''
+    },
+    plotOptions: {
+      series: {
+        pointPadding: 0,
+        groupPadding: 0,
+        borderWidth: 0,
+        shadow: false
+      }
+    },
+    series: [{
+      data: [[0,100]],
+      color: this.barColor1,
+    }]
+  };
+
+  chartOptions1B: Options = {
+    chart: {
+      type: 'column',
+      height: 300
+    },
+    title:{
+      text:''
+    },
+    legend: {
+      enabled: false
+    },
+    xAxis: [{
+      labels: {
+        enabled: false
+      },
+    }],
+    yAxis: [{
+      title: {
+        text: ''
+      }
+    }],
+    tooltip: {
+      useHTML: true,
+      headerFormat: '<span style="font-size: 33px; color: #173181; font-weight: 800;">{point.y}%</span>',
+      pointFormat: ''
+    },
+    plotOptions: {
+      series: {
+        pointPadding: 0,
+        groupPadding: 0,
+        borderWidth: 0,
+        shadow: false
+      }
+    },
+    series: [{
+      data: [[0,100]],
+      color: this.barColor1,
+    }]
+  };
+
+  chartOptions0: Options = {
     chart: {
       type: 'column',
       height: 300
@@ -133,46 +302,6 @@ export class HomeComponent {
     }]
   };
 
-  chartOptions0: Options = {
-    chart: {
-      type: 'column',
-      height: 300
-    },
-    title:{
-      text:''
-    },
-    legend: {
-      enabled: false
-    },
-    xAxis: [{
-      labels: {
-        enabled: false
-      },
-    }],
-    yAxis: [{
-      title: {
-        text: ''
-      }
-    }],
-    tooltip: {
-      useHTML: true,
-      headerFormat: '<span style="font-size: 33px; color: #173181; font-weight: 800;">{point.y}%</span>',
-      pointFormat: ''
-    },
-    plotOptions: {
-      series: {
-        pointPadding: 0,
-        groupPadding: 0,
-        borderWidth: 0,
-        shadow: false
-      }
-    },
-    series: [{
-      data: [[0,100]],
-      color: this.barColor1,
-    }]
-  };
-
   public tabs = [
     {
       ico: '../assets/svg/hospital_coverage.svg',
@@ -196,100 +325,6 @@ export class HomeComponent {
     },
   ];
 
-  public barChartData: ChartConfiguration<'bar'>['data'] = {
-    labels: [''],
-    datasets: [
-      { 
-        data: [90], 
-        barPercentage: 1.0,
-        categoryPercentage: 1.0,
-        label: '', 
-        backgroundColor: '#9BA5B7' }
-    ],
-  };
-
-  // Tab0
-  public barChartData0: ChartConfiguration<'bar'>['data'] = {
-    labels: ['', '', '', ''],
-    datasets: [
-      {
-        data: [100, 80, 70, 50],
-        label: '',
-        backgroundColor: [this.barColor1, this.barColor2, this.barColor3, this.barColor4],
-        barPercentage: 1.0,
-        categoryPercentage: 1.0,
-      },
-    ],
-  };
-
-  // Tab1
-  public barChartData1: ChartConfiguration<'bar'>['data'] = {
-    labels: ['', '', ''],
-    datasets: [
-      {
-        data: [100, 80, 70],
-        label: '',
-        backgroundColor: [this.barColor1, this.barColor2, this.barColor3],
-        barPercentage: 1.0,
-        categoryPercentage: 1.0,
-      },
-    ],
-  };
-
-  // Tab2
-  public barChartData2: ChartConfiguration<'bar'>['data'] = {
-    labels: ['', ''],
-    datasets: [
-      {
-        data: [100, 80],
-        label: '',
-        backgroundColor: [this.barColor1, this.barColor2],
-        barPercentage: 1.0,
-        categoryPercentage: 1.0,
-      },
-    ],
-  };
-
-  // Tab3
-  public barChartData3: ChartConfiguration<'bar'>['data'] = {
-    labels: [''],
-    datasets: [
-      {
-        data: [100],
-        label: '',
-        backgroundColor: [this.barColor1],
-        barPercentage: 1.0,
-        categoryPercentage: 1.0,
-      },
-    ],
-  };
-
-  public barChartData3B: ChartConfiguration<'bar'>['data'] = {
-    labels: [''],
-    datasets: [
-      {
-        data: [100],
-        label: '',
-        backgroundColor: [this.barColor0],
-        borderColor: [this.barColor0B],
-        borderWidth: 1,
-        barPercentage: 1.0,
-        categoryPercentage: 1.0,
-      },
-    ],
-  };
-
-  public barChartOptions: ChartConfiguration<'bar'>['options'] = {
-    responsive: true,
-    maintainAspectRatio: false,
-    events: [],
-    scales: {
-      y: {
-        beginAtZero: true,
-        max: 100,
-      },
-    },
-  };
 
 
   public toolOptions = {
