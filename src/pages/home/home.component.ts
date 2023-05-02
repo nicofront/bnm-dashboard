@@ -30,16 +30,16 @@ export class HomeComponent {
   public barColor0B = '#9BA5B7';
 
   // Colores Banmedica
-  public barColor1 = '#357B99';
-  public barColor2 = '#4C97B7';
-  public barColor3 = '#83C0DA';
-  public barColor4 = '#B8EAFF';
+  // public barColor1 = '#357B99';
+  // public barColor2 = '#4C97B7';
+  // public barColor3 = '#83C0DA';
+  // public barColor4 = '#B8EAFF';
 
   // Colores Vidatres
-  // public barColor1 = '#2d816b';
-  // public barColor2 = '#46a088';
-  // public barColor3 = '#82c6b2';
-  // public barColor4 = '#BAEDDD';
+  public barColor1 = '#2d816b';
+  public barColor2 = '#46a088';
+  public barColor3 = '#82c6b2';
+  public barColor4 = '#BAEDDD';
 
   Highcharts: typeof Highcharts = Highcharts;
 
@@ -65,8 +65,17 @@ export class HomeComponent {
       }
     }],
     tooltip: {
-      headerFormat: '<span style="font-size: 20px; color: #173181; display: inline-block; padding-top: 50px; font-weight: 800;">{point.y}%</span>',
+      useHTML: true,
+      headerFormat: '<span style="font-size: 33px; color: #173181; font-weight: 800;">{point.y}%</span>',
       pointFormat: ''
+    },
+    plotOptions: {
+      series: {
+        pointPadding: 0,
+        groupPadding: 0,
+        borderWidth: 0,
+        shadow: false
+      }
     },
     series: [{
       data: [[0,100]],
@@ -100,8 +109,17 @@ export class HomeComponent {
       }
     }],
     tooltip: {
+      useHTML: true,
       headerFormat: '<span style="font-size: 33px; color: #173181; font-weight: 800;">{point.y}%</span>',
       pointFormat: ''
+    },
+    plotOptions: {
+      series: {
+        pointPadding: 0,
+        groupPadding: 0,
+        borderWidth: 0,
+        shadow: false
+      }
     },
     series: [{
       data: [[0,100]],

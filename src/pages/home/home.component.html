@@ -441,7 +441,7 @@
         </div>
       </div>
       <div class="m-section-canvas section-canvas row">
-        <!-- <div class="col-md-12">
+        <div class="col-md-12">
           <div class="chart-lobby">
             <img src="../assets/img/select-image.png" alt="" />
             <h3 class="chart-lobby-title textcolor">
@@ -451,7 +451,7 @@
               Conoce tus coberturas y sácale provecho a tu plan.
             </p>
           </div>
-        </div> -->
+        </div>
         <div class="canvas1 canvas col-md-8">
           <div class="canvas__head">
             <h3 class="canvas__title textcolor">
@@ -471,16 +471,8 @@
               <span class="material-icons green">&#xe52d;</span>
             </p>
           </div>
-          <div class="canvas__chart">
+          <div class="canvas__chart canvas__fluid">
             <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions"></highcharts-chart>
-            <!-- <canvas
-              baseChart
-              [data]="barChartData0"
-              [options]="barChartOptions"
-              [legend]="barChartLegend"
-              [type]="'bar'"
-            >
-            </canvas> -->
           </div>
 
           <div class="providers__section">
@@ -663,8 +655,8 @@
               <span class="material-icons green">&#xe52d;</span>
             </p>
           </div>
-          <div class="canvas__chart">
-            <!-- <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions0"></highcharts-chart> -->
+          <div class="canvas__chart canvas__fluid">
+            <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions0"></highcharts-chart>
             <!-- <canvas
               baseChart
               [data]="barChartData"
@@ -897,7 +889,7 @@
               <span class="material-icons green">&#xe52d;</span>
             </p>
           </div>
-          <div class="canvas__chart">
+          <div class="canvas__chart canvas__fluid">
             <!-- <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions0"></highcharts-chart> -->
             <!-- <canvas
               baseChart

@@ -1,6 +1,14 @@
 // .tooltip-simple, .dashtooltip, .tooltip-shadow{
 // }
 
+.canvas__fluid{
+  max-width: 100%;
+  highcharts-chart, .highcharts-container {
+    max-width: 100%;
+    display: block;
+  }
+}
+
 .highcharts-credits{
   display: none;
 }
