@@ -657,14 +657,6 @@
           </div>
           <div class="canvas__chart canvas__fluid">
             <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions0"></highcharts-chart>
-            <!-- <canvas
-              baseChart
-              [data]="barChartData"
-              [options]="barChartOptions"
-              [legend]="barChartLegend"
-              [type]="'bar'"
-            >
-            </canvas> -->
           </div>          
           <div class="providers__section">
             <div class="row">
@@ -699,7 +691,7 @@
         </div>
       </div>
       <div class="m-section-canvas section-canvas row">
-        <div class="canvas1 canvas col-md-9">
+        <div class="canvas1 canvas col-md-8">
           <div class="canvas__head">
             <h3 class="canvas__title textcolor">
               Cobertura preferente
@@ -718,21 +710,13 @@
               <span class="material-icons green">&#xe52d;</span>
             </p>
           </div>
-          <div class="canvas__chart">
+          <div class="canvas__chart canvas__fluid">
             <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions"></highcharts-chart>
-            <!-- <canvas
-              baseChart
-              [data]="barChartData1"
-              [options]="barChartOptions"
-              [legend]="barChartLegend"
-              [type]="'bar'"
-            >
-            </canvas> -->
           </div>
 
           <div class="providers__section">
             <div class="row">
-              <div class="col-md-4 providers__column providers__column1">
+              <div class="col-md-3 providers__column providers__column1">
                 <h3 class="textcolor">
                   Prestadores con cobertura al 100%
                   <a href="/providers" class="providers__link">
@@ -796,7 +780,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 providers__column providers__column2">
+              <div class="col-md-3 providers__column providers__column2">
                 <h3 class="textcolor">
                   Prestadores con cobertura al 80%
                 </h3>
@@ -837,7 +821,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 providers__column providers__column3">
+              <div class="col-md-3 providers__column providers__column3">
                 <h3 class="textcolor">
                   Prestadores con cobertura al 70%
                 </h3>
@@ -868,10 +852,31 @@
                   </div>
                 </div>
               </div>
+              <div class="col-md-3 providers__column providers__column4">
+                <h3 class="textcolor">
+                  Prestadores con cobertura al 50%
+                </h3>
+                <div class="providers__column__item providers">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="canvas2 canvas col-md-3">
+        <div class="canvas2 canvas col-md-4">
           <div class="canvas__head">
             <h3 class="canvas__title textcolor">
               Cobertura libre elección
@@ -890,16 +895,8 @@
             </p>
           </div>
           <div class="canvas__chart canvas__fluid">
-            <!-- <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions0"></highcharts-chart> -->
-            <!-- <canvas
-              baseChart
-              [data]="barChartData"
-              [options]="barChartOptions"
-              [legend]="barChartLegend"
-              [type]="'bar'"
-            >
-            </canvas> -->
-          </div>
+            <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions0"></highcharts-chart>
+          </div>          
           <div class="providers__section">
             <div class="row">
               <div class="col-md-12 providers__column">
@@ -933,7 +930,7 @@
         </div>
       </div>
       <div class="m-section-canvas section-canvas row">
-        <div class="canvas1 canvas col-md-6 ">
+        <div class="canvas1 canvas col-md-8">
           <div class="canvas__head">
             <h3 class="canvas__title textcolor">
               Cobertura preferente
@@ -952,20 +949,13 @@
               <span class="material-icons green">&#xe52d;</span>
             </p>
           </div>
-          <div class="canvas__chart">
-            <!-- <canvas
-              baseChart
-              [data]="barChartData2"
-              [options]="barChartOptions"
-              [legend]="barChartLegend"
-              [type]="'bar'"
-            >
-            </canvas> -->
-          </div>          
+          <div class="canvas__chart canvas__fluid">
+            <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions"></highcharts-chart>
+          </div>
 
           <div class="providers__section">
             <div class="row">
-              <div class="col-md-6 providers__column providers__column1">
+              <div class="col-md-3 providers__column providers__column1">
                 <h3 class="textcolor">
                   Prestadores con cobertura al 100%
                   <a href="/providers" class="providers__link">
@@ -1029,7 +1019,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 providers__column providers__column2">
+              <div class="col-md-3 providers__column providers__column2">
                 <h3 class="textcolor">
                   Prestadores con cobertura al 80%
                 </h3>
@@ -1070,11 +1060,62 @@
                   </div>
                 </div>
               </div>
+              <div class="col-md-3 providers__column providers__column3">
+                <h3 class="textcolor">
+                  Prestadores con cobertura al 70%
+                </h3>
+                <div class="providers__column__item providers">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/sm.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 providers__column providers__column4">
+                <h3 class="textcolor">
+                  Prestadores con cobertura al 50%
+                </h3>
+                <div class="providers__column__item providers">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
-        <div class="canvas2 canvas col-md-3 offset-md-1">
+        <div class="canvas2 canvas col-md-4">
           <div class="canvas__head">
             <h3 class="canvas__title textcolor">
               Cobertura libre elección
@@ -1092,16 +1133,9 @@
               <span class="material-icons green">&#xe52d;</span>
             </p>
           </div>
-          <div class="canvas__chart">
-            <!-- <canvas
-              baseChart
-              [data]="barChartData"
-              [options]="barChartOptions"
-              [legend]="barChartLegend"
-              [type]="'bar'"
-            >
-            </canvas> -->
-          </div>
+          <div class="canvas__chart canvas__fluid">
+            <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions0"></highcharts-chart>
+          </div>          
           <div class="providers__section">
             <div class="row">
               <div class="col-md-12 providers__column">
@@ -1135,7 +1169,7 @@
         </div>
       </div>
       <div class="m-section-canvas section-canvas row">
-        <div class="canvas1 canvas col-md-3 offset-md-2">
+        <div class="canvas1 canvas col-md-8">
           <div class="canvas__head">
             <h3 class="canvas__title textcolor">
               Cobertura preferente
@@ -1154,19 +1188,13 @@
               <span class="material-icons green">&#xe52d;</span>
             </p>
           </div>
-          <div class="canvas__chart">
-            <!-- <canvas
-              baseChart
-              [data]="barChartData3"
-              [options]="barChartOptions"
-              [legend]="barChartLegend"
-              [type]="'bar'"
-            >
-            </canvas> -->
+          <div class="canvas__chart canvas__fluid">
+            <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions"></highcharts-chart>
           </div>
+
           <div class="providers__section">
             <div class="row">
-              <div class="col-md-12 providers__column providers__column1">
+              <div class="col-md-3 providers__column providers__column1">
                 <h3 class="textcolor">
                   Prestadores con cobertura al 100%
                   <a href="/providers" class="providers__link">
@@ -1230,10 +1258,103 @@
                   </div>
                 </div>
               </div>
+              <div class="col-md-3 providers__column providers__column2">
+                <h3 class="textcolor">
+                  Prestadores con cobertura al 80%
+                </h3>
+                <div class="providers__column__item providers">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/vespucio.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/sm.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 providers__column providers__column3">
+                <h3 class="textcolor">
+                  Prestadores con cobertura al 70%
+                </h3>
+                <div class="providers__column__item providers">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/sm.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 providers__column providers__column4">
+                <h3 class="textcolor">
+                  Prestadores con cobertura al 50%
+                </h3>
+                <div class="providers__column__item providers">
+                  <div class="providers__column__scroll">
+                    <ul>
+                      <li>
+                        <img src="../assets/img/condes.png" alt="" />
+                        <div tooltip="<div class='tooltip-table'><h3>Clínica Dávila</h3><table><tr><td><strong>100%</strong></td><td>de cobertura preferente</td></tr><tr><td><span class='material-icons symbol'>&#xf109;</span></td><td>Solo con médicos staff</td></tr><tr><td><span class='material-icons symbol'>&#xea45;</span></td><td>Habitación doble</td></tr><tr><td><span class='material-icons symbol'>&#xf1b6;</span></td><td>Sólo con bonos</td></tr><tr><td><span class='material-icons'>&#xe0c8;</span></td><td><a href='' target='_blank'>Ver ubicación</a></td></tr></table></div>" [options]="toolOptions" class="eyetooltip sitebg">
+                          <span class="material-icons">&#xe8f4;</span>Ver detalle
+                        </div>
+                        <a href="" class="adress linkcolor">
+                          <span class="material-icons">&#xe0c8;</span>
+                          Ver ubicación
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="canvas2 canvas col-md-3 offset-md-1">
+        <div class="canvas2 canvas col-md-4">
           <div class="canvas__head">
             <h3 class="canvas__title textcolor">
               Cobertura libre elección
@@ -1251,16 +1372,9 @@
               <span class="material-icons green">&#xe52d;</span>
             </p>
           </div>
-          <div class="canvas__chart">
-            <!-- <canvas
-              baseChart
-              [data]="barChartData"
-              [options]="barChartOptions"
-              [legend]="barChartLegend"
-              [type]="'bar'"
-            >
-            </canvas> -->
-          </div>
+          <div class="canvas__chart canvas__fluid">
+            <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions0"></highcharts-chart>
+          </div>          
           <div class="providers__section">
             <div class="row">
               <div class="col-md-12 providers__column">
@@ -1290,19 +1404,12 @@
             <p class="canvas__tope">
             </p>
           </div>
-          <div class="canvas__chart canvas__chart--none">
+          <div class="canvas__chart canvas__fluid canvas__chart--none">
             <div class="canvas__chart__label">
               Sin cobertura <br>
               preferente
             </div>
-            <!-- <canvas
-              baseChart
-              [data]="barChartData3B"
-              [options]="barChartOptions"
-              [legend]="barChartLegend"
-              [type]="'bar'"
-            >
-            </canvas> -->
+            <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptionsNone"></highcharts-chart>
           </div>
           <div class="providers__section">
             <div class="row">
@@ -1341,15 +1448,8 @@
               <span class="material-icons green">&#xe52d;</span>
             </p>
           </div>
-          <div class="canvas__chart">
-            <!-- <canvas
-              baseChart
-              [data]="barChartData"
-              [options]="barChartOptions"
-              [legend]="barChartLegend"
-              [type]="'bar'"
-            >
-            </canvas> -->
+          <div class="canvas__chart canvas__fluid">
+            <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions0"></highcharts-chart>
           </div>
           <div class="providers__section">
             <div class="row">

@@ -56,8 +56,8 @@ export class HomeComponent {
     },
     xAxis: [{
       labels: {
-              enabled: false
-          },
+        enabled: false
+      },
     }],
     yAxis: [{
       title: {
@@ -92,6 +92,47 @@ export class HomeComponent {
     }]
   };
 
+  chartOptionsNone: Options = {
+    chart: {
+      type: 'column',
+      height: 300
+    },
+    title:{
+      text:''
+    },
+    legend: {
+      enabled: false
+    },
+    xAxis: [{
+      labels: {
+        enabled: false
+      },
+    }],
+    yAxis: [{
+      title: {
+        text: ''
+      },
+    }],
+    tooltip: {
+      useHTML: true,
+      headerFormat: '<span style="font-size: 33px; color: #173181; font-weight: 800;">{point.y}%</span>',
+      pointFormat: ''
+    },
+    plotOptions: {
+      series: {
+        pointPadding: 0,
+        groupPadding: 0,
+        shadow: false,
+        borderColor: this.barColor0B,
+        borderWidth: 1
+      }
+    },
+    series: [{
+      data: [[0,100]],
+      color: this.barColor0,
+    }]
+  };
+
   chartOptions0: Options = {
     chart: {
       type: 'column',
@@ -103,6 +144,11 @@ export class HomeComponent {
     legend: {
       enabled: false
     },
+    xAxis: [{
+      labels: {
+        enabled: false
+      },
+    }],
     yAxis: [{
       title: {
         text: ''
