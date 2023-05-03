@@ -64,6 +64,12 @@ body {
   }
 }
 
+::ng-deep{
+  .dashtooltip{
+    background-color: #173181 !important;
+  }
+}
+
 .providers__section{
   .providers__column{
     &.providers__column1{

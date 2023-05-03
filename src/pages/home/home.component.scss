@@ -1,6 +1,39 @@
 // .tooltip-simple, .dashtooltip, .tooltip-shadow{
 // }
 
+::ng-deep{
+  .dashtooltip{
+    padding: 15px !important;
+    min-width: 240px;
+    h3{
+      color: #fff;
+      text-align: left;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    tr{
+      td{
+        padding: 5px 4px;
+        text-align: left;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        &:last-child{
+          padding-right: 0;
+        }
+        a{
+          color: #fff;
+          text-decoration: underline;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 .canvas__fluid{
   max-width: 100%;
   highcharts-chart, .highcharts-container {
@@ -11,6 +44,10 @@
 
 .highcharts-credits{
   display: none;
+}
+
+.dashtooltip{
+  text-align: left !important;
 }
 
 .m-flex {
