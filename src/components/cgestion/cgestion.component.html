@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
-		<div class="col-md-12">
-			<ul class="breadcrumbs"> 
+		<div class="col-md-9">
+			<ul class="breadcrumbs mb-4 mt-4"> 
 			 <li class="crumb"> 
 			  <a href="#">Inicio</a>
 			 </li>
@@ -12,8 +12,9 @@
 			  <a href="#">Ingresa tu solicitud</a>
 			 </li> 
 			</ul>
-
-			<div class="message message-primary message-action">
+		</div>
+		<div class="col-md-9">
+			<div class="message message-primary message-action mb-4">
 			 <div class="col-9 message-side">
 			  <div class="message-icon bigger">
 			   <span class="material-icons">info</span>
@@ -25,53 +26,74 @@
 			 </div>
 			</div>
 		</div>
-		<div class="col-md-12">
-			<h5><strong>Datos de contacto</strong></h5>
+		<div class="col-md-9">
+			<h5 class="mb-3"><strong>Datos de contacto</strong></h5>
 		</div>
-		<div class="col-md-4">
-			<h6><strong>Asegurado:</strong> Nicolás Federico Correa</h6>
-		</div>
-		<div class="col-md-8">
-			<h6><strong>Rut:</strong> 16.371.691-7</h6>
-		</div>
-		<div class="col-md-6">
-			<div class="form-group fg-icon fg-icon-action">
-			 <input type="text" class="form-control" id="usr" value="usuario@email.com" placeholder=" " disabled>
-			 <i class="material-icons">mail</i>
-			 <label for="usr">Correo electrónico</label>
-			 <a href="#" data-toggle="modal" data-target=".bd-example-modal-md">
-			  <i class="material-icons">edit</i>
-			 </a>
-			 <small>Texto de ayuda y validación</small>
+		<div class="col-md-9 mb-3">
+			<div class="row">
+				<div class="col-md-4">
+					<h6><strong>Asegurado:</strong> Nicolás Federico Correa</h6>
+				</div>
+				<div class="col-md-8">
+					<h6><strong>Rut:</strong> 16.371.691-7</h6>
+				</div>
 			</div>
 		</div>
-		<div class="col-md-6">
-			<div class="form-group fg-icon fg-icon-action">
-			 <input type="tel" class="form-control" id="numero2" value="9 5555 5555" placeholder=" " disabled>
-			 <i class="material-icons">local_phone</i>
-			 <label for="numero2">Teléfono</label>
-			 <a href="#" data-toggle="modal" data-target=".bd-example-modal-md">
-			  <i class="material-icons">edit</i>
-			 </a>
-			 <small>Texto de ayuda y validación</small>
+		<div class="col-md-9 mb-4">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group fg-icon fg-icon-action">
+					 <input type="text" class="form-control" id="usr" value="usuario@email.com" placeholder=" " disabled>
+					 <i class="material-icons">mail</i>
+					 <label for="usr">Correo electrónico</label>
+					 <a href="#" data-toggle="modal" data-target=".bd-example-modal-md">
+					  <i class="material-icons">edit</i>
+					 </a>
+					 <small>Texto de ayuda y validación</small>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group fg-icon fg-icon-action">
+					 <input type="tel" class="form-control" id="numero2" value="9 5555 5555" placeholder=" " disabled>
+					 <i class="material-icons">local_phone</i>
+					 <label for="numero2">Teléfono</label>
+					 <a href="#" data-toggle="modal" data-target=".bd-example-modal-md">
+					  <i class="material-icons">edit</i>
+					 </a>
+					 <small>Texto de ayuda y validación</small>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="col-md-12">
+		<div class="col-md-9 mb-3">
 			<h5><strong>Cuéntanos tu caso</strong></h5>
 			<h6>Un ejecutivo responderá tu solicitud por este mismo medio.</h6>
-			<div class="form-group">
-			 <input type="text" class="form-control" id="nombre" placeholder="Nombre">
-			 <label for="nombre">Nombre</label>
-			 <small>Texto de ayuda y validación</small>
+		</div>
+		<div class="col-md-9">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+					 <select class="custom-select select2" id="exampleFormControlSelect1">
+					  <option>Selecciona</option>
+					  <option>Consulta</option>
+					  <option>Requerimiento</option>
+					  <option>Reclamo</option>
+					 </select>
+					 <label for="exampleFormControlSelect1">Tipo de solicitud</label>
+					 <small>Texto de ayuda y validación</small>
+					</div>
+				</div>
 			</div>
+		</div>
+		<div class="col-md-9 mb-5">
 			<div class="form-group">
-			 <textarea class="form-control" id="textarea" placeholder="Textarea"></textarea>
-			 <label for="textarea">Textarea</label>
+			 <textarea class="form-control" id="textarea" placeholder="Detalla tu consulta, solicitud o reclamo"></textarea>
+			 <label for="textarea">Detalla tu consulta, solicitud o reclamo</label>
 			 <small>Texto de ayuda y validación</small>
 			</div>
 		</div>
-		<div class="col-md-12">
-			<h5><strong>Adjunta la información necesaria</strong>(Opcional)</h5>
+		<div class="col-md-9 mb-4">
+			<h5><strong>Adjunta la información necesaria</strong> (Opcional)</h5>
 			<div class="drag-area p-4 rounded-sm text-center"> 
 			 <div class="d-none d-lg-block"> 
 			  <i class="material-icons md-36 text-primary">flip_to_front</i>
@@ -82,6 +104,13 @@
 			  <p>Haz <a href="#">click aquí </a>para subir el archivo desde tu celular</p>
 			 </div>
 			 <small class="text-info">JPG/PNG/PDF. Máximo: 5 mb.</small>
+			</div>
+		</div>
+		<div class="col-md-9 pb-5">
+			<div class="row">
+				<div class="col-md-4 offset-md-8">
+					<button type="button" class="btn btn-primary w-100">Enviar mensaje</button> 
+				</div>
 			</div>
 		</div>
 	</div>
