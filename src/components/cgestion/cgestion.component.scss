@@ -1,3 +1,40 @@
 .message.message-action{
 	max-width: 100%;
 }
+
+.upload {
+  border: 2px dashed #ebebeb;
+  border-radius: 10px;
+  padding: 25px;
+  .upload__title {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 10px;
+    p {
+      font-weight: 600;
+      margin: auto 0;
+    }
+    .material-symbols-outlined{
+      color: #009845;
+      font-size: 22px;
+    }
+  }
+
+  .upload__subTitle {
+    p {
+      margin: auto 0;
+    }
+    p:not(:last-child) {
+      margin: auto 0 5px;
+    }
+    label {
+      cursor: pointer;
+      font-weight: 600;
+    }
+    input[type='file'] {
+      visibility: hidden;
+      position: absolute;
+    }
+  }
+}
