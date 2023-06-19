@@ -2,6 +2,19 @@
 	max-width: 100%;
 }
 
+.message.message-primary span{
+	color: #53565A;
+	font-size: 14px;
+}
+.message.message-primary span.material-icons{
+	color: #3498DB;
+	font-size: 32px;
+}
+
+.form-group textarea, form textarea{
+	resize: none;
+}
+
 .upload {
   border: 2px dashed #ebebeb;
   border-radius: 10px;
