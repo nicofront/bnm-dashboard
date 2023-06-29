@@ -100,3 +100,40 @@ body {
     color: #173181; 
   }
 }
+
+.linkcolor{
+  &:hover{
+    color: #2D816B;
+  }
+}
+
+.link {
+  &:hover{
+    .link__label, .section-header__download-txt, &.link-simple{
+      color: #2D816B;
+    }
+  }
+}
+
+.card-my-plan__link {
+  a{
+    &:hover{
+      color: #2D816B;
+      .card-my-plan__link-label{
+        color: #2D816B;
+      }
+    }
+  }
+}
+
+.providers-section{
+  .providers-block{
+    .providers-link{
+      a{
+        &:hover{
+          color: #2D816B;
+        }
+      }
+    }
+  }
+}

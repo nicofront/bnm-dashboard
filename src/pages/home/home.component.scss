@@ -193,7 +193,6 @@ a:hover .material-icons{
         text-decoration-line: underline;
         display: inline-block;
         &:hover{
-          text-decoration: none;
         }
       }
     }
@@ -532,7 +531,6 @@ a:hover .material-icons{
   }
   &:hover{
     .link__label, .section-header__download-txt, &.link-simple{
-      text-decoration: none;
     }
   }
 }
@@ -865,7 +863,6 @@ a:hover .material-icons{
     &:hover{
       text-decoration: none;
       .card-my-plan__link-label{
-        text-decoration: none;
       }
     }
   }
