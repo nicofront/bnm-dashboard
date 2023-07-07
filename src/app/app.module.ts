@@ -15,9 +15,12 @@ import { HomeComponent } from 'src/pages/home/home.component';
 import { FooterComponent } from 'src/pages/pfooter/pfooter.component';
 import { AseguradosComponent } from 'src/pages/asegurados/asegurados.component';
 
+import { ModalbenefitsModule } from 'src/components/modal-benefits/modal-benefits.module';
+import { BenefitsComponent } from 'src/pages/benefits/benefits.component';
+
 @NgModule({
-  declarations: [AppComponent, HomeComponent, FooterComponent, AseguradosComponent],
-  imports: [BrowserModule, AppRoutingModule, HighchartsChartModule, TooltipModule, TabsModule, CfooterModule, CardaseguradoModule],
+  declarations: [AppComponent, HomeComponent, FooterComponent, AseguradosComponent, BenefitsComponent],
+  imports: [BrowserModule, AppRoutingModule, HighchartsChartModule, TooltipModule, TabsModule, CfooterModule, CardaseguradoModule, ModalbenefitsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
