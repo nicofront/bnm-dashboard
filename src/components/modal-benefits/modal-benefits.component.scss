@@ -89,12 +89,14 @@
 		.modalbenefits__close{
 			display: inline-block;
 			position: absolute;
+			padding: 0;
 			top: 15px;
 			right: 15px;
 			border: none;
-			background-color: grey;
 			width: 24px;
 			height: 24px;
+			background: none;
+			cursor: pointer;
 		}
 		.modalbenefits__title{
 			margin: 0;
