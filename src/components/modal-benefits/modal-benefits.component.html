@@ -34,6 +34,7 @@
         <button type="button" class="btn btn-sm btn-primary w-100" (click)="benefitsGo(2)">Me interesa</button>          
       </div>
     </div>
+
   </div>
   <!-- Step 1 -->
 
@@ -225,7 +226,10 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <p><a href="#" (click)="benefitsGo(1)">VOLVER</a></p>
+          <a class="back-btn"href="#" (click)="benefitsGo(1)">
+            <i class="material-icons">keyboard_arrow_left</i>
+            <p>Volver</p>
+          </a>
         </div>
       </div>
     </div>
@@ -282,7 +286,10 @@
     </div>
     <div class="row">
       <div class="col-md-4">
-        <p><a href="#" (click)="benefitsGo(2)">VOLVER</a></p>
+        <a class="back-btn"href="#" (click)="benefitsGo(2)">
+          <i class="material-icons">keyboard_arrow_left</i>
+          <p>Volver</p>
+        </a>
       </div>
       <div class="col-md-4 offset-md-4">
         <button type="button" class="btn btn-primary w-100" (click)="benefitsGo(4)">Contratar</button> 
