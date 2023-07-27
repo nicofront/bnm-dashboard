@@ -2,7 +2,8 @@
 
 <div class="modalbenefits">
   <!-- Step 1 -->
-  <div class="modalbenefits__body step1 modalbenefits__body--active">
+  <div class="modalbenefits__body" [ngClass]="id == 1 ? 'modalbenefits__body--active' : ''" id="step1">
+    <button class="modalbenefits__close" (click)="benefitsGo(0)"></button>
     <h5 class="modalbenefits__title">
       <strong>Tenemos estos beneficios para ti</strong>
     </h5>
@@ -28,191 +29,199 @@
             <p>Mejor cobertura en atenciones traumatológicas y hasta 100% de cobertura en hospitalizaciones.</p>
           </li>
         </ul>
-        <button type="button" class="btn btn-sm btn-primary w-100">Me interesa</button>          
+        <button type="button" class="btn btn-sm btn-primary w-100" (click)="benefitsGo(2)">Me interesa</button>          
       </div>
     </div>
   </div>
   <!-- Step 1 -->
 
   <!-- Step 2 -->
-  <div class="modalbenefits__body step2">
+  <div class="modalbenefits__body" [ngClass]="id == 2 ? 'modalbenefits__body--active' : ''" id="step2">
+    <button class="modalbenefits__close" (click)="benefitsGo(0)"></button>
     <h5 class="modalbenefits__title">
       <strong>Compara fácilmente las características de ambos planes</strong>
     </h5>
-    <div class="row">
-      <div class="col-md-6 order-md-1 order-2">
-        <h5 class="mb-2">
-          <strong>Plan actual</strong>
-        </h5>
-        <div class="tablebox">
-          <div class="tablebox-top">
-            <h6 class="mb-0">
-              <strong>
-                Sport Preferente Elite C3/A19
-              </strong>
-            </h6>
-          </div>
-          <div class="tablebox-bottom">
-            <div class="row mb-2">
-              <div class="col-md-6">
-                <p class="mb-0">
-                  Valor mensual
-                </p>
-                <h4>
-                  <strong>$ 160.000 / UF 5,2</strong>
-                </h4>
-              </div>
-              <div class="col-md-6">
-                <div class="message message-warning message-action">
-                 <div class="message-side">
-                  <div class="message-icon bigger">
-                   <span class="material-icons">paid </span>
+    <div class="tablewrapper">
+      <div class="row mb-2">
+        <div class="col-md-6 order-md-1 order-2">
+          <h5 class="mb-2">
+            <strong>Plan actual</strong>
+          </h5>
+          <div class="tablebox">
+            <div class="tablebox-top">
+              <h6 class="mb-0">
+                <strong>
+                  Sport Preferente Elite C3/A19
+                </strong>
+              </h6>
+            </div>
+            <div class="tablebox-bottom">
+              <div class="row mb-2">
+                <div class="col-md-6">
+                  <p class="mb-0">
+                    Valor mensual
+                  </p>
+                  <h4>
+                    <strong>$ 160.000 / UF 5,2</strong>
+                  </h4>
+                </div>
+                <div class="col-md-6">
+                  <div class="message message-warning message-action">
+                   <div class="message-side">
+                    <div class="message-icon bigger">
+                     <span class="material-icons">paid </span>
+                    </div>
+                    <span>
+                      <small>Adicional a pagar</small>
+                      <p class="mb-0">
+                        <strong>
+                          $ 20.000 / UF 0,8
+                        </strong>
+                      </p>
+                    </span>
+                   </div>
                   </div>
-                  <span>
-                    <small>Adicional a pagar</small>
-                    <p class="mb-0">
-                      <strong>
-                        $ 20.000 / UF 0,8
-                      </strong>
-                    </p>
-                  </span>
-                 </div>
                 </div>
               </div>
+              <p>
+                <strong>Coberturas preferentes</strong>
+              </p>
+              <div class="table-responsive mb-2">
+               <table class="table table-combined table-striped">
+                <thead>
+                 <tr>
+                  <th rowspan="2">Prestador</th>
+                  <th>Coberturas</th>
+                 </tr>
+                 <tr>
+                   <th>Hosp.</th>
+                   <th>Amb.</th>
+                   <th>Urg.</th>
+                 </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                  <td rowspan="1" class="align-middle">Clínica Alemana</td>
+                  <td>100%</td>
+                  <td>90%</td>
+                  <td>80%</td>
+                 </tr>
+                 <tr>
+                  <td rowspan="1" class="align-middle">Clínica U. de Los Andes</td>
+                  <td>100%</td>
+                  <td>90%</td>
+                  <td>80%</td>
+                 </tr>
+                 <tr>
+                  <td rowspan="1" class="align-middle">Clínica Las Condes</td>
+                  <td>100%</td>
+                  <td>90%</td>
+                  <td>80%</td>
+                 </tr>
+                </tbody>
+               </table>
+              </div>
+              <p class="mb-4">
+               <a href="#" class="link link-icon">
+                <i class="material-icons link">note</i>
+                <span>Ver detalle del plan</span>
+               </a>
+              </p>
             </div>
-            <p>
-              <strong>Coberturas preferentes</strong>
-            </p>
-            <div class="table-responsive mb-2">
-             <table class="id-table table table-combined table-striped">
-              <thead>
-               <tr>
-                <th rowspan="2">Prestador</th>
-                <th>Coberturas</th>
-               </tr>
-               <tr>
-                 <th>Hosp.</th>
-                 <th>Amb.</th>
-                 <th>Urg.</th>
-               </tr>
-              </thead>
-              <tbody>
-               <tr>
-                <td rowspan="1" class="align-middle">Clínica Alemana</td>
-                <td>100%</td>
-                <td>90%</td>
-                <td>80%</td>
-               </tr>
-               <tr>
-                <td rowspan="1" class="align-middle">Clínica U. de Los Andes</td>
-                <td>100%</td>
-                <td>90%</td>
-                <td>80%</td>
-               </tr>
-               <tr>
-                <td rowspan="1" class="align-middle">Clínica Las Condes</td>
-                <td>100%</td>
-                <td>90%</td>
-                <td>80%</td>
-               </tr>
-              </tbody>
-             </table>
+          </div>
+        </div>
+        <div class="col-md-6 order-md-2 order-1">
+          <h5 class="mb-2">
+            <strong>Nuevo plan</strong>
+          </h5>
+          <div class="tablebox">
+            <div class="tablebox-top tablebox-top-alt">
+              <h6 class="mb-0">
+                <strong>
+                  Vanguardia Premium Lite Ultra CB/2109 
+                </strong>
+              </h6>
             </div>
-            <p class="mb-4">
-             <a href="#" class="link link-icon">
-              <i class="material-icons link">note</i>
-              <span>Ver detalle del plan</span>
-             </a>
-            </p>
+            <div class="tablebox-bottom">
+              <div class="row mb-2">
+                <div class="col-md-6">
+                  <p class="mb-0">
+                    Valor mensual
+                  </p>
+                  <h4>
+                    <strong>$ 150.000 / UF 4,8</strong>
+                  </h4>
+                </div>
+                <div class="col-md-6">
+                  <div class="message message-success message-action">
+                   <div class="message-side">
+                    <div class="message-icon bigger">
+                     <span class="material-icons">paid </span>
+                    </div>
+                    <span>
+                      <small>Excedentes</small>
+                      <p class="mb-0">
+                        <strong>
+                          $ 10.000 / UF 0,4
+                        </strong>
+                      </p>
+                    </span>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <p>
+                <strong>Coberturas preferentes</strong>
+              </p>
+              <div class="table-responsive mb-2">
+               <table class="table table-combined table-striped">
+                <thead>
+                 <tr>
+                  <th rowspan="2">Prestador</th>
+                  <th>Coberturas</th>
+                 </tr>
+                 <tr>
+                   <th>Hosp.</th>
+                   <th>Amb.</th>
+                   <th>Urg.</th>
+                 </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                  <td rowspan="1" class="align-middle">Clínica Alemana</td>
+                  <td>100%</td>
+                  <td>90%</td>
+                  <td>80%</td>
+                 </tr>
+                 <tr>
+                  <td rowspan="1" class="align-middle">Clínica U. de Los Andes</td>
+                  <td>100%</td>
+                  <td>90%</td>
+                  <td>80%</td>
+                 </tr>
+                 <tr>
+                  <td rowspan="1" class="align-middle">Clínica Las Condes</td>
+                  <td>100%</td>
+                  <td>90%</td>
+                  <td>80%</td>
+                 </tr>
+                </tbody>
+               </table>
+              </div>
+              <p class="mb-4">
+               <a href="#" class="link link-icon">
+                <i class="material-icons link">note</i>
+                <span>Ver detalle del plan</span>
+               </a>
+              </p>
+              <button type="button" class="btn btn-primary w-100" (click)="benefitsGo(3)">Me interesa este plan</button> 
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 order-md-2 order-1">
-        <h5 class="mb-2">
-          <strong>Nuevo plan</strong>
-        </h5>
-        <div class="tablebox">
-          <div class="tablebox-top tablebox-top-alt">
-            <h6 class="mb-0">
-              <strong>
-                Vanguardia Premium Lite Ultra CB/2109 
-              </strong>
-            </h6>
-          </div>
-          <div class="tablebox-bottom">
-            <div class="row mb-2">
-              <div class="col-md-6">
-                <p class="mb-0">
-                  Valor mensual
-                </p>
-                <h4>
-                  <strong>$ 150.000 / UF 4,8</strong>
-                </h4>
-              </div>
-              <div class="col-md-6">
-                <div class="message message-success message-action">
-                 <div class="message-side">
-                  <div class="message-icon bigger">
-                   <span class="material-icons">paid </span>
-                  </div>
-                  <span>
-                    <small>Excedentes</small>
-                    <p class="mb-0">
-                      <strong>
-                        $ 10.000 / UF 0,4
-                      </strong>
-                    </p>
-                  </span>
-                 </div>
-                </div>
-              </div>
-            </div>
-            <p>
-              <strong>Coberturas preferentes</strong>
-            </p>
-            <div class="table-responsive mb-2">
-             <table class="id-table table table-combined table-striped">
-              <thead>
-               <tr>
-                <th rowspan="2">Prestador</th>
-                <th>Coberturas</th>
-               </tr>
-               <tr>
-                 <th>Hosp.</th>
-                 <th>Amb.</th>
-                 <th>Urg.</th>
-               </tr>
-              </thead>
-              <tbody>
-               <tr>
-                <td rowspan="1" class="align-middle">Clínica Alemana</td>
-                <td>100%</td>
-                <td>90%</td>
-                <td>80%</td>
-               </tr>
-               <tr>
-                <td rowspan="1" class="align-middle">Clínica U. de Los Andes</td>
-                <td>100%</td>
-                <td>90%</td>
-                <td>80%</td>
-               </tr>
-               <tr>
-                <td rowspan="1" class="align-middle">Clínica Las Condes</td>
-                <td>100%</td>
-                <td>90%</td>
-                <td>80%</td>
-               </tr>
-              </tbody>
-             </table>
-            </div>
-            <p class="mb-4">
-             <a href="#" class="link link-icon">
-              <i class="material-icons link">note</i>
-              <span>Ver detalle del plan</span>
-             </a>
-            </p>
-            <button type="button" class="btn btn-primary w-100">Me interesa este plan</button> 
-          </div>
+      <div class="row">
+        <div class="col-md-4">
+          <p><a href="#" (click)="benefitsGo(1)">VOLVER</a></p>
         </div>
       </div>
     </div>
@@ -220,7 +229,8 @@
   <!-- Step 2 -->
 
   <!-- Step 3 -->
-  <div class="modalbenefits__body step3">
+  <div class="modalbenefits__body" [ngClass]="id == 3 ? 'modalbenefits__body--active' : ''" id="step3">
+    <button class="modalbenefits__close" (click)="benefitsGo(0)"></button>
     <h5 class="modalbenefits__title">
       <strong>¡Estás tomando una buena decisión!</strong>
     </h5>
@@ -266,22 +276,23 @@
     </div>
     <div class="row">
       <div class="col-md-4">
-        <p><a href="#">VOLVER</a></p>
+        <p><a href="#" (click)="benefitsGo(2)">VOLVER</a></p>
       </div>
       <div class="col-md-4 offset-md-4">
-        <button type="button" class="btn btn-primary w-100">Contratar</button> 
+        <button type="button" class="btn btn-primary w-100" (click)="benefitsGo(4)">Contratar</button> 
       </div>
     </div>
   </div>
   <!-- Step 3 -->
 
   <!-- Step 4 -->
-  <div class="modalbenefits__body step4">
+  <div class="modalbenefits__body" [ngClass]="id == 4 ? 'modalbenefits__body--active' : ''" id="step4">
+    <button class="modalbenefits__close" (click)="benefitsGo(0)"></button>
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-2 pt-5">
         <i class="ico-check-circle ico-big color-green"></i>
       </div>
-      <div class="col-md-10">
+      <div class="col-md-10 pt-5">
         <h3 class="mb-2">
           <strong>¡Solicitud enviada! </strong>
         </h3>
@@ -293,10 +304,10 @@
     </div>
     <div class="row">
       <div class="col-md-5 offset-md-2">
-        <button type="button" class="btn btn-outline-primary w-100">FINALIZAR</button> 
+        <button type="button" class="btn btn-outline-primary w-100" (click)="benefitsGo(0)">FINALIZAR</button> 
       </div>
       <div class="col-md-5">
-        <button type="button" class="btn btn-primary w-100">SEGUIR VIENDO BENEFICIOS</button> 
+        <button type="button" class="btn btn-primary w-100" (click)="benefitsGo(1)">SEGUIR VIENDO BENEFICIOS</button> 
       </div>
     </div>
   </div>

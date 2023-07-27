@@ -38,6 +38,7 @@
 		background: #FFF; 
 		display: inline-block;
 		padding: 30px;
+		padding-top: 15px;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -46,6 +47,54 @@
 		display: none;
 		&.modalbenefits__body--active{
 			display: inline-block;
+		}
+		.message{
+			&.message-primary.message-action{
+				color: inherit;
+				max-width: 100%;
+				.message-side{
+					span{
+						color: inherit;
+					}
+				}
+			}
+			.message-side{
+				p{
+					font-size: 14px;
+				}
+			}
+		}
+		.tablewrapper{
+			width: 1000px;
+			max-width: 100%;
+			padding: 0 10px;
+		}
+		.table{
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: 0 0 0 1px #EBEBEB;
+			border-style: hidden;
+			thead th, tbody td{
+				padding: 7px 12px;
+			}
+			thead{
+				th{
+					border: 1px solid #EBEBEB;
+					&:first-child{
+						border-radius: 10px 0 0 0;
+					}
+				}
+			}
+		}
+		.modalbenefits__close{
+			display: inline-block;
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			border: none;
+			background-color: grey;
+			width: 24px;
+			height: 24px;
 		}
 		.modalbenefits__title{
 			margin: 0;
@@ -56,6 +105,7 @@
 			display: inline-block;
 			border-radius: 10px;
 			width: 338px;
+			width: 500px;
 			max-width: 100%;
 			.modalbenefits__top{
 				overflow: hidden;

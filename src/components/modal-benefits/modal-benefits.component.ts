@@ -12,4 +12,11 @@ export class ModalbenefitsComponent {
   constructor() {
   }
 
+  id : number = 1;
+
+  benefitsGo(id: any) {
+    event.preventDefault();
+    this.id = id;
+  }
+
 }
