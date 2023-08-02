@@ -15,7 +15,7 @@ export class ModalbenefitsComponent {
   id : number = 1;
 
   benefitsGo(id: any) {
-    event.preventDefault();
+    // event.preventDefault();
     this.id = id;
   }
 

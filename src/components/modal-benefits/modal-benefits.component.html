@@ -48,7 +48,7 @@
     </h5>
     <div class="tablewrapper">
       <div class="row mb-2">
-        <div class="col-md-6 order-md-1 order-2">
+        <div class="col-md-6 order-md-1 order-2 mb-2">
           <h5 class="mb-2">
             <strong>Plan actual</strong>
           </h5>
@@ -135,7 +135,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 order-md-2 order-1">
+        <div class="col-md-6 order-md-2 order-1 mb-2">
           <h5 class="mb-2">
             <strong>Nuevo plan</strong>
           </h5>
@@ -226,7 +226,7 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <a class="back-btn"href="#" (click)="benefitsGo(1)">
+          <a class="back-btn" (click)="benefitsGo(1)">
             <i class="material-icons">keyboard_arrow_left</i>
             <p>Volver</p>
           </a>
@@ -269,7 +269,7 @@
       Si editas tu correo electrónico este cambio será sólo para este trámite en particular.
     </p>
     <div class="row">
-      <div class="col-md-6 mb-2">
+      <div class="col-lg-6 mb-2">
         <div class="form-group fg-icon fg-icon-action">
          <input type="text" class="form-control" id="usr" value="usuario@email.com" placeholder=" " disabled>
          <i class="material-icons">mail</i>
@@ -285,13 +285,13 @@
      <label class="custom-control-label" for="defaultCheck1"></label> Acepto los <a href="" target="_blank">Términos y condiciones</a>
     </div>
     <div class="row">
-      <div class="col-md-4">
-        <a class="back-btn"href="#" (click)="benefitsGo(2)">
+      <div class="col-md-4 mb-1">
+        <a class="back-btn" (click)="benefitsGo(2)">
           <i class="material-icons">keyboard_arrow_left</i>
           <p>Volver</p>
         </a>
       </div>
-      <div class="col-md-4 offset-md-4">
+      <div class="col-md-4 offset-md-4 mb-1">
         <button type="button" class="btn btn-primary w-100" (click)="benefitsGo(4)">Contratar</button> 
       </div>
     </div>
@@ -304,10 +304,10 @@
       <i class="material-icons">close</i>
     </button>
     <div class="row">
-      <div class="col-md-2 pt-5">
+      <div class="col-md-1 pt-5">
         <i class="ico-check-circle ico-big color-green"></i>
       </div>
-      <div class="col-md-10 pt-5">
+      <div class="col-md-11 pt-5">
         <h3 class="mb-2">
           <strong>¡Solicitud enviada! </strong>
         </h3>
@@ -315,14 +315,14 @@
           Un ejecutivo se pondrá en contacto contigo dentro de los próximos días. 
           Si tienes alguna consulta, no dudes en llamarnos a nuestro Contact Center al 600 600 3600.
         </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-5 offset-md-2">
-        <button type="button" class="btn btn-outline-primary w-100" (click)="benefitsGo(0)">FINALIZAR</button> 
-      </div>
-      <div class="col-md-5">
-        <button type="button" class="btn btn-primary w-100" (click)="benefitsGo(1)">SEGUIR VIENDO BENEFICIOS</button> 
+        <div class="row">
+          <div class="col-lg-6 mb-1">
+            <button type="button" class="btn btn-outline-primary w-100" (click)="benefitsGo(0)">FINALIZAR</button> 
+          </div>
+          <div class="col-lg-6 mb-1">
+            <button type="button" class="btn btn-primary w-100" (click)="benefitsGo(1)">SEGUIR VIENDO BENEFICIOS</button> 
+          </div>
+        </div>
       </div>
     </div>
   </div>
