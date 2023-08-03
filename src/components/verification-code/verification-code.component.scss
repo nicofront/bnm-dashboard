@@ -6,6 +6,21 @@
 	height: 100vh;
 }
 
+.verification{
+	.verification__box{
+		width: 637px;
+		max-width: 100%;
+		border-radius: 10px;
+		border: 2px solid #EBEBEB;
+		background: #FFF; 
+		padding: 36px 52px;
+		margin: 0 auto;
+		.verification__box__title{
+			margin-bottom: 12px;
+		}
+	}
+}
+
 .modalbenefits{
 	position: absolute;
 	top: 0;

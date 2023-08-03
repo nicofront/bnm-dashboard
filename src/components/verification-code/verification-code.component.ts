@@ -12,7 +12,7 @@ export class VerificationcodeComponent {
   constructor() {
   }
 
-  id : number = 1;
+  id : number = 0;
 
   benefitsGo(id: any) {
     // event.preventDefault();
