@@ -2,233 +2,90 @@
 <div class="verification">
   <div class="verification__box">
     <h4 class="text-center verification__box__title">
+      <strong>Alcanzaste el límite de intentos</strong>
+    </h4>
+    <h6 class="text-center mb-5">
+      Inténtalo de nuevo en 10 minutos.
+    </h6>
+    <div class="row">
+      <div class="col-md-6 offset-md-3 mb-4">
+          <a href="#" class="btn btn-primary disabled w-100" tabindex="-1" role="button" aria-disabled="true">
+          reenviar código</a> 
+        </div>
+      </div>
+      <div class="col-md-12">
+        <p class="text-center">
+          ¿Necesitas ayuda? <br>
+          Llámanos al <a href="tel:6006003600"><strong>600 600 3600</strong></a>
+        </p>
+      </div>
+    </div>
+</div>
+
+<div class="verification">
+  <div class="verification__box">
+    <div class="text-center">
+      <img src="../assets/svg/sms.svg" class="mb-4" />
+    </div>
+    <h4 class="text-center verification__box__title">
       <strong>Validación en dos pasos</strong>
     </h4>
     <h6 class="text-center mb-2">
       Para proteger tu cuenta y validar que eres tú quién está iniciando sesión, ingresa el código que enviamos por SMS al
     </h6>
-    <h5 class="text-center">
+    <h5 class="text-center mb-4">
       <strong>
         *** *** 345
       </strong>
     </h5>
-  </div>
-</div>
-
-<div class="body"></div>
-
-<div class="modalbenefits" style="display: none;">
-  <!-- Step 1 -->
-  <div class="modalbenefits__body" [ngClass]="id == 1 ? 'modalbenefits__body--active' : ''" id="step1">
-    <button class="modalbenefits__close" (click)="benefitsGo(0)">
-      <i class="material-icons">close</i>
-    </button>
-    <h5 class="modalbenefits__title">
-      <strong>Tenemos estos beneficios para ti</strong>
-    </h5>
-    <p class="mb-0">
-      Por favor, llámanos al 600 600 3600 y registra tu número de celular para recibir el código de autenticación y acceder a la plataforma. Esta medida garantiza mayor protección de tus datos y una experiencia digital más segura.
-    </p>
-
-  </div>
-  <!-- Step 1 -->
-
-  <!-- Step 2 -->
-  <div class="modalbenefits__body" [ngClass]="id == 2 ? 'modalbenefits__body--active' : ''" id="step2">
-    <button class="modalbenefits__close" (click)="benefitsGo(0)">
-      <i class="material-icons">close</i>
-    </button>
-    <h5 class="modalbenefits__title">
-      <strong>Compara fácilmente las características de ambos planes</strong>
-    </h5>
-    <div class="tablewrapper">
-      <div class="row mb-2">
-        <div class="col-md-6 order-md-1 order-2 mb-2">
-          <h5 class="mb-2">
-            <strong>Plan actual</strong>
-          </h5>
-          <div class="tablebox">
-            <div class="tablebox-top">
-              <h6 class="mb-0">
-                <strong>
-                  Sport Preferente Elite C3/A19
-                </strong>
-              </h6>
-            </div>
-            <div class="tablebox-bottom">
-              <div class="row mb-2">
-                <div class="col-md-6">
-                  <p class="mb-0">
-                    Valor mensual
-                  </p>
-                  <h4>
-                    <strong>$ 160.000 / UF 5,2</strong>
-                  </h4>
-                </div>
-                <div class="col-md-6">
-                  <div class="message message-warning message-action">
-                   <div class="message-side">
-                    <div class="message-icon bigger">
-                     <span class="material-icons">paid </span>
-                    </div>
-                    <span>
-                      <small>Adicional a pagar</small>
-                      <p class="mb-0">
-                        <strong>
-                          $ 20.000 / UF 0,8
-                        </strong>
-                      </p>
-                    </span>
-                   </div>
-                  </div>
-                </div>
-              </div>
-              <p>
-                <strong>Coberturas preferentes</strong>
-              </p>
-              <div class="table-responsive mb-2">
-               <table class="table table-combined table-striped">
-                <thead>
-                 <tr>
-                  <th rowspan="2">Prestador</th>
-                  <th>Coberturas</th>
-                 </tr>
-                 <tr>
-                   <th>Hosp.</th>
-                   <th>Amb.</th>
-                   <th>Urg.</th>
-                 </tr>
-                </thead>
-                <tbody>
-                 <tr>
-                  <td rowspan="1" class="align-middle">Clínica Alemana</td>
-                  <td>100%</td>
-                  <td>90%</td>
-                  <td>80%</td>
-                 </tr>
-                 <tr>
-                  <td rowspan="1" class="align-middle">Clínica U. de Los Andes</td>
-                  <td>100%</td>
-                  <td>90%</td>
-                  <td>80%</td>
-                 </tr>
-                 <tr>
-                  <td rowspan="1" class="align-middle">Clínica Las Condes</td>
-                  <td>100%</td>
-                  <td>90%</td>
-                  <td>80%</td>
-                 </tr>
-                </tbody>
-               </table>
-              </div>
-              <p class="mb-4">
-               <a href="#" class="link link-icon">
-                <i class="material-icons link">description</i>
-                <span>Ver detalle del plan</span>
-               </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 order-md-2 order-1 mb-2">
-          <h5 class="mb-2">
-            <strong>Nuevo plan</strong>
-          </h5>
-          <div class="tablebox">
-            <div class="tablebox-top tablebox-top-alt">
-              <h6 class="mb-0">
-                <strong>
-                  Vanguardia Premium Lite Ultra CB/2109 
-                </strong>
-              </h6>
-            </div>
-            <div class="tablebox-bottom">
-              <div class="row mb-2">
-                <div class="col-md-6">
-                  <p class="mb-0">
-                    Valor mensual
-                  </p>
-                  <h4>
-                    <strong>$ 150.000 / UF 4,8</strong>
-                  </h4>
-                </div>
-                <div class="col-md-6">
-                  <div class="message message-success message-action">
-                   <div class="message-side">
-                    <div class="message-icon bigger">
-                     <span class="material-icons">paid </span>
-                    </div>
-                    <span>
-                      <small>Excedentes</small>
-                      <p class="mb-0">
-                        <strong>
-                          $ 10.000 / UF 0,4
-                        </strong>
-                      </p>
-                    </span>
-                   </div>
-                  </div>
-                </div>
-              </div>
-              <p>
-                <strong>Coberturas preferentes</strong>
-              </p>
-              <div class="table-responsive mb-2">
-               <table class="table table-combined table-striped">
-                <thead>
-                 <tr>
-                  <th rowspan="2">Prestador</th>
-                  <th>Coberturas</th>
-                 </tr>
-                 <tr>
-                   <th>Hosp.</th>
-                   <th>Amb.</th>
-                   <th>Urg.</th>
-                 </tr>
-                </thead>
-                <tbody>
-                 <tr>
-                  <td rowspan="1" class="align-middle">Clínica Alemana</td>
-                  <td>100%</td>
-                  <td>90%</td>
-                  <td>80%</td>
-                 </tr>
-                 <tr>
-                  <td rowspan="1" class="align-middle">Clínica U. de Los Andes</td>
-                  <td>100%</td>
-                  <td>90%</td>
-                  <td>80%</td>
-                 </tr>
-                 <tr>
-                  <td rowspan="1" class="align-middle">Clínica Las Condes</td>
-                  <td>100%</td>
-                  <td>90%</td>
-                  <td>80%</td>
-                 </tr>
-                </tbody>
-               </table>
-              </div>
-              <p class="mb-4">
-               <a href="#" class="link link-icon">
-                <i class="material-icons link">description</i>
-                <span>Ver detalle del plan</span>
-               </a>
-              </p>
-              <button type="button" class="btn btn-primary w-100" (click)="benefitsGo(3)">Me interesa este plan</button> 
-            </div>
-          </div>
+    <div class="form-group mb-5">
+     <div class="verification__group">
+      <p class="label">
+        Ingresa el código de verificación
+      </p>
+      <div class="verification__group__flex">
+        <input type="text" class="form-control">
+        <input type="text" class="form-control">
+        <input type="text" class="form-control">
+        <input type="text" class="form-control">
+        <input type="text" class="form-control">
+        <input type="text" class="form-control">
+      </div>
+      <small class="text-danger">Código incorrecto. Te quedan 2 intentos</small>
+     </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 offset-md-3 mb-4">
+          <p class="mb-2 text-center">
+            ¿No recibiste el SMS?
+          </p>
+          <a href="#" class="btn btn-sm btn-outline-secondary disabled w-100" tabindex="-1" role="button" aria-disabled="true">
+          reenviar código en 00:30</a> 
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <a class="back-btn" (click)="benefitsGo(1)">
-            <i class="material-icons">keyboard_arrow_left</i>
-            <p>Volver</p>
-          </a>
-        </div>
+      <div class="col-md-12">
+        <p class="text-center">
+          ¿Cambiaste tu número de celular? <br>
+          Llámanos al <a href="tel:6006003600"><strong>600 600 3600</strong></a>
+        </p>
       </div>
     </div>
+</div>
+
+<div class="modalverification" [ngClass]="id == 1 ? 'modalverification--active' : ''">
+  <div class="modalverification__body">
+    <button class="modalverification__close" (click)="verificationGo(0)">
+      <i class="material-icons">close</i>
+    </button>
+    <div class="text-center">
+      <img src="../assets/svg/sms.svg" />
+    </div>
+    <h5 class="modalverification__title">
+      <strong>Registra tu número de contacto</strong>
+    </h5>
+    <p class="mb-0">
+      Por favor, llámanos al <a href="tel:6006003600"><strong>600 600 3600</strong></a> y registra tu número de celular para recibir el código de autenticación y acceder a la plataforma. Esta medida garantiza mayor protección de tus datos y una experiencia digital más segura.
+    </p>
   </div>
-  <!-- Step 2 -->
   
 </div>
