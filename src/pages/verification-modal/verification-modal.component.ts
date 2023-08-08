@@ -5,11 +5,11 @@ import { ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './verification.component.html',
-  styleUrls: ['./verification.component.scss']
+  templateUrl: './verification-modal.component.html',
+  styleUrls: ['../verification/verification.component.scss']
 })
 
-export class VerificationComponent {
+export class VerificationModalComponent {
 
   public ngOnInit() {
 
