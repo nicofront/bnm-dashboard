@@ -15,12 +15,12 @@ import { AppComponent } from './app.component';
 // import { FooterComponent } from 'src/pages/pfooter/pfooter.component';
 // import { AseguradosComponent } from 'src/pages/asegurados/asegurados.component';
 
-import { VerificationcodeModule } from 'src/components/verification-code/verification-code.module';
-import { VerificationComponent } from 'src/pages/verification/verification.component';
+// import { VerificationcodeModule } from 'src/components/verification-code/verification-code.module';
+// import { VerificationComponent } from 'src/pages/verification/verification.component';
 
 @NgModule({
-  declarations: [AppComponent, VerificationComponent],
-  imports: [BrowserModule, AppRoutingModule, VerificationcodeModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

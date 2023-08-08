@@ -4,7 +4,7 @@ import { Verificationcode } from 'src/components/verification-code/verification-
 import { ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-verificationtimeout',
   templateUrl: './verification-timeout.component.html',
   styleUrls: ['../verification/verification.component.scss']
 })

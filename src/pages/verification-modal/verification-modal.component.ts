@@ -4,7 +4,7 @@ import { Verificationcode } from 'src/components/verification-code/verification-
 import { ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-verificationmodal',
   templateUrl: './verification-modal.component.html',
   styleUrls: ['../verification/verification.component.scss']
 })
