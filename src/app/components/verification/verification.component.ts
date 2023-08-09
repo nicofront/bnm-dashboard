@@ -9,6 +9,11 @@ export class VerificationComponent implements OnInit {
 
   constructor() { }
 
+  verificationKey(id: any) {
+    var elements = document.getElementById('inputbox').children
+    elements.item(id).focus();
+  }
+
   ngOnInit(): void {
   }
 
