@@ -19,7 +19,7 @@ export class ModalbenefitsComponent {
     // event.preventDefault();
     this.id = id;
   }
-  accordiontg() {
+  accordiontg(id: any) {
     console.log('yes!');
     this.status = !this.status;   
   }

@@ -82,6 +82,11 @@
 				background-color: #ebebeb;
 				cursor: pointer;
 				position: relative;
+				&.active{
+					.accordionblock-item-arrow{
+						transform: rotate(180deg);
+					}
+				}
 				&.active + .accordionblock-item-body{
 					display: block;
 				}
