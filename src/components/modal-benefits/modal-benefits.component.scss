@@ -65,10 +65,23 @@
 			&:last-child{
 				margin-bottom: 0;
 			}
+			.accordionblock-item-arrow{
+				position: absolute;
+				display: inline-block;
+				border-radius: 50%;
+				right: 16px;
+				top: 16px;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: #323232;
+				width: 14px;
+				height: 14px;
+			}
 			.accordionblock-item-trigger{
 				padding: 14px;
 				background-color: #ebebeb;
 				cursor: pointer;
+				position: relative;
 				&.active + .accordionblock-item-body{
 					display: block;
 				}
