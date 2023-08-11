@@ -13,15 +13,15 @@ export class ModalbenefitsComponent {
   }
 
   id : number = 1;
-  status: boolean = false;
+  status: number = 0;
 
   benefitsGo(id: any) {
     // event.preventDefault();
     this.id = id;
   }
-  accordiontg(id: any) {
+  accordiontg(status: any) {
     console.log('yes!');
-    this.status = !this.status;   
+    this.status = status;
   }
 
 }

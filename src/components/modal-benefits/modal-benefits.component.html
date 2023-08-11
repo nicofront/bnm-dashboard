@@ -96,6 +96,58 @@
               <p class="mb-2 pb-1">
                 <strong>Coberturas preferentes</strong>
               </p>
+              <div class="accordionblock">
+                <div class="accordionblock-item">
+                  <div class="accordionblock-item-trigger" [ngClass]="status == 1 ? 'active' : ''" (click)="accordiontg(1)">
+                    <div class="accordionblock-item-arrow">
+                      <i class="material-icons">arrow_drop_down</i>
+                    </div>
+                    <p class="mb-0">
+                      <strong>Prestador</strong> <br>
+                      Clínica Alemana
+                    </p>
+                  </div>
+                  <div class="accordionblock-item-body">
+                    <p class="mb-1">
+                      <strong>Hospitalaria</strong>
+                      <span>100%</span>
+                    </p>
+                    <p class="mb-1">
+                      <strong>Ambulatoria</strong>
+                      <span>90%</span>
+                    </p>
+                    <p class="mb-1">
+                      <strong>Urgencia</strong>
+                      <span>80%</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="accordionblock-item">
+                  <div class="accordionblock-item-trigger" [ngClass]="status == 2 ? 'active' : ''" (click)="accordiontg(2)">
+                    <div class="accordionblock-item-arrow">
+                      <i class="material-icons">arrow_drop_down</i>
+                    </div>
+                    <p class="mb-0">
+                      <strong>Prestador</strong> <br>
+                      Clínica Alemana
+                    </p>
+                  </div>
+                  <div class="accordionblock-item-body">
+                    <p class="mb-1">
+                      <strong>Hospitalaria</strong>
+                      <span>100%</span>
+                    </p>
+                    <p class="mb-1">
+                      <strong>Ambulatoria</strong>
+                      <span>90%</span>
+                    </p>
+                    <p class="mb-1">
+                      <strong>Urgencia</strong>
+                      <span>80%</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div class="table-responsive mb-2">
                <table class="table table-combined table-striped">
                 <thead>
@@ -194,7 +246,32 @@
               </p>
               <div class="accordionblock">
                 <div class="accordionblock-item">
-                  <div class="accordionblock-item-trigger" [ngClass]="status ? 'active' : ''" (click)="accordiontg()">
+                  <div class="accordionblock-item-trigger" [ngClass]="status == 3 ? 'active' : ''" (click)="accordiontg(3)">
+                    <div class="accordionblock-item-arrow">
+                      <i class="material-icons">arrow_drop_down</i>
+                    </div>
+                    <p class="mb-0">
+                      <strong>Prestador</strong> <br>
+                      Clínica Alemana
+                    </p>
+                  </div>
+                  <div class="accordionblock-item-body">
+                    <p class="mb-1">
+                      <strong>Hospitalaria</strong>
+                      <span>100%</span>
+                    </p>
+                    <p class="mb-1">
+                      <strong>Ambulatoria</strong>
+                      <span>90%</span>
+                    </p>
+                    <p class="mb-1">
+                      <strong>Urgencia</strong>
+                      <span>80%</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="accordionblock-item">
+                  <div class="accordionblock-item-trigger" [ngClass]="status == 4 ? 'active' : ''" (click)="accordiontg(4)">
                     <div class="accordionblock-item-arrow">
                       <i class="material-icons">arrow_drop_down</i>
                     </div>
