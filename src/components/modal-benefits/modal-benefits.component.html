@@ -195,7 +195,9 @@
               <div class="accordionblock">
                 <div class="accordionblock-item">
                   <div class="accordionblock-item-trigger" [ngClass]="status ? 'active' : ''" (click)="accordiontg()">
-                    <div class="accordionblock-item-arrow"></div>
+                    <div class="accordionblock-item-arrow">
+                      <i class="material-icons">arrow_drop_down</i>
+                    </div>
                     <p class="mb-0">
                       <strong>Prestador</strong> <br>
                       Clínica Alemana
@@ -324,7 +326,7 @@
       </div>
       <div class="custom-control custom-checkbox mb-3">
        <input class="custom-control-input" type="checkbox" value="" id="defaultCheck1">
-       <label class="custom-control-label" for="defaultCheck1"></label> Acepto los <a href="" target="_blank">Términos y condiciones</a>
+       <label class="custom-control-label" for="defaultCheck1"></label> <p>Acepto los <a href="" target="_blank">Términos y condiciones</a></p>
       </div>
       <div class="row">
         <div class="col-md-4 mb-1 order-md-1 order-2">
