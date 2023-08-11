@@ -57,12 +57,14 @@
 				margin-bottom: 0;
 			}
 			.accordionblock-item-trigger{
-				padding: 16px;
+				padding: 14px;
 				background-color: #ebebeb;
+				cursor: pointer;
 			}
 			.accordionblock-item-body{
-				padding: 16px;
+				padding: 14px;
 				padding-bottom: 12px;
+				display: none;
 				p{
 					width: 100%;
 					position: relative;
