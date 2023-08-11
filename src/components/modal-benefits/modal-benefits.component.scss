@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 .body{
-	background-color: blue;
+	background-color: grey;
 	display: block;
-	height: 100vh;
+	height: 200vh;
 }
 
 .modalbenefits{
@@ -14,8 +14,67 @@
 	width: 100%;
 	height: 100vh;
 	background-color: rgba(255,255,255,0.9);
+	@media (max-width: 768px){
+		.mbl-center{
+			text-align: center;
+		}
+		.flex-left{
+			flex-direction: initial;
+		}
+		.back-btn{
+			justify-content: center;
+			margin-top: 16px;
+		}
+		.order-2{
+			.btn{
+				margin-top: 16px;
+			}
+		}
+	}
 	.back-btn{
 		cursor: pointer;
+	}
+	.plantitle{
+		position: relative;
+		padding-left: 24px;
+		display: inline-block;
+		.material-icons{
+			position: absolute;
+			margin-right: 4px;
+			top: 0;
+			left: 0;
+			font-size: 20px;
+		}
+	}
+	.accordionblock{
+		padding-bottom: 24px;
+		.accordionblock-item{
+			border-radius: 10px;
+			overflow: hidden;
+			border: 1px solid #ebebeb;
+			margin-bottom: 24px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			.accordionblock-item-trigger{
+				padding: 16px;
+				background-color: #ebebeb;
+			}
+			.accordionblock-item-body{
+				padding: 16px;
+				padding-bottom: 12px;
+				p{
+					width: 100%;
+					position: relative;
+					span{
+						text-align: right;
+						position: absolute;
+						top: 0;
+						right: 0;
+					}
+				}
+			}
+		}
 	}
 	.tablebox{
 		border-radius: 10px;
@@ -26,7 +85,7 @@
 			background: #FAFAFA; 
 			&.tablebox-top-alt{
 				background: #9BA5B7; 
-				h6{
+				h6, p{
 					color: #fff;
 				}
 			}
@@ -43,15 +102,20 @@
 		padding: 30px;
 		padding-top: 15px;
 		position: absolute;
-		top: 50%;
+		top: 30px;
 		left: 50%;
 		max-width: 100%;
-		transform: translate(-50%, -50%);
+		transform: translate(-50%, 0);
 		display: none;
 		&.modalbenefits__body--active{
 			display: inline-block;
 		}
+		.modalbenefits__box{
+			width: 760px;
+			max-width: 100%;
+		}
 		.message{
+			padding: 8px;
 			&.message-primary.message-action{
 				color: inherit;
 				max-width: 100%;
@@ -63,7 +127,19 @@
 			}
 			.message-side{
 				p{
+					font-size: 15px;
+					line-height: 20px;
+				}
+				small{
 					font-size: 14px;
+				}
+			}
+			.message-icon{
+				margin-right: 5px;
+				&.bigger{
+					.material-icons{
+						font-size: 24px;
+					}
 				}
 			}
 		}
@@ -71,6 +147,9 @@
 			width: 1000px;
 			max-width: 100%;
 			padding: 0 10px;
+			@media (max-width: 768px){
+				padding: 0;
+			}
 		}
 		.table{
 			border-radius: 10px;

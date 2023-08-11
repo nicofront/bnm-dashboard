@@ -49,20 +49,25 @@
     <div class="tablewrapper">
       <div class="row mb-2">
         <div class="col-md-6 order-md-1 order-2 mb-2">
-          <h5 class="mb-2">
+          <h5 class="mb-2 d-none d-md-block">
             <strong>Plan actual</strong>
           </h5>
           <div class="tablebox">
             <div class="tablebox-top">
-              <h6 class="mb-0">
-                <strong>
-                  Sport Preferente Elite C3/A19
-                </strong>
-              </h6>
+              <div class="mbl-center">
+                <p class="mb-1 d-block d-md-none">
+                  <strong>Plan actual</strong>
+                </p>
+                <h6 class="mb-0">
+                  <strong>
+                    Sport Preferente Elite C3/A19
+                  </strong>
+                </h6>
+              </div>
             </div>
             <div class="tablebox-bottom">
               <div class="row mb-2">
-                <div class="col-md-6">
+                <div class="col-md-6 mbl-center">
                   <p class="mb-0">
                     Valor mensual
                   </p>
@@ -71,7 +76,7 @@
                   </h4>
                 </div>
                 <div class="col-md-6">
-                  <div class="message message-warning message-action">
+                  <div class="message message-warning message-action flex-left mb-2">
                    <div class="message-side">
                     <div class="message-icon bigger">
                      <span class="material-icons">paid </span>
@@ -88,7 +93,7 @@
                   </div>
                 </div>
               </div>
-              <p>
+              <p class="mb-2 pb-1">
                 <strong>Coberturas preferentes</strong>
               </p>
               <div class="table-responsive mb-2">
@@ -136,20 +141,29 @@
           </div>
         </div>
         <div class="col-md-6 order-md-2 order-1 mb-2">
-          <h5 class="mb-2">
+          <h5 class="mb-2 d-none d-md-block plantitle">
+            <span class="material-icons">star</span>
             <strong>Nuevo plan</strong>
           </h5>
           <div class="tablebox">
             <div class="tablebox-top tablebox-top-alt">
-              <h6 class="mb-0">
-                <strong>
-                  Vanguardia Premium Lite Ultra CB/2109 
-                </strong>
-              </h6>
+              <div class="mbl-center">
+                <div class="d-block d-md-none">
+                  <p class="plantitle mb-1">
+                    <span class="material-icons">star</span>
+                    <strong>Nuevo plan</strong>
+                  </p>
+                </div>
+                <h6 class="mb-0">
+                  <strong>
+                    Vanguardia Premium Lite Ultra CB/2109 
+                  </strong>
+                </h6>
+              </div>
             </div>
             <div class="tablebox-bottom">
               <div class="row mb-2">
-                <div class="col-md-6">
+                <div class="col-md-6 mbl-center">
                   <p class="mb-0">
                     Valor mensual
                   </p>
@@ -158,7 +172,7 @@
                   </h4>
                 </div>
                 <div class="col-md-6">
-                  <div class="message message-success message-action">
+                  <div class="message message-success message-action flex-left mb-2">
                    <div class="message-side">
                     <div class="message-icon bigger">
                      <span class="material-icons">paid </span>
@@ -175,9 +189,33 @@
                   </div>
                 </div>
               </div>
-              <p>
+              <p class="mb-2 pb-1">
                 <strong>Coberturas preferentes</strong>
               </p>
+              <div class="accordionblock">
+                <div class="accordionblock-item">
+                  <div class="accordionblock-item-trigger">
+                    <p class="mb-0">
+                      <strong>Prestador</strong> <br>
+                      Clínica Alemana
+                    </p>
+                  </div>
+                  <div class="accordionblock-item-body">
+                    <p class="mb-1">
+                      <strong>Hospitalaria</strong>
+                      <span>100%</span>
+                    </p>
+                    <p class="mb-1">
+                      <strong>Ambulatoria</strong>
+                      <span>90%</span>
+                    </p>
+                    <p class="mb-1">
+                      <strong>Urgencia</strong>
+                      <span>80%</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div class="table-responsive mb-2">
                <table class="table table-combined table-striped">
                 <thead>
@@ -219,7 +257,9 @@
                 <span>Ver detalle del plan</span>
                </a>
               </p>
-              <button type="button" class="btn btn-primary w-100" (click)="benefitsGo(3)">Me interesa este plan</button> 
+              <div class="text-center">
+                <button type="button" class="btn btn-primary" (click)="benefitsGo(3)">Me interesa este plan</button> 
+              </div>
             </div>
           </div>
         </div>
@@ -238,61 +278,65 @@
 
   <!-- Step 3 -->
   <div class="modalbenefits__body" [ngClass]="id == 3 ? 'modalbenefits__body--active' : ''" id="step3">
-    <button class="modalbenefits__close" (click)="benefitsGo(0)">
-      <i class="material-icons">close</i>
-    </button>
-    <h5 class="modalbenefits__title">
-      <strong>¡Estás tomando una buena decisión!</strong>
-    </h5>
-    <p>
-      El plan <strong>Vanguardia Premium Lite Ultra CB/2109</strong> será incluido en tu cotización mensual de la Isapre y tendrá el siguiente costo:
-    </p>
-    <div class="message message-primary message-action mb-3">
-     <div class="message-side">
-      <span>
-        <p class="mb-0">
-          <strong>Total cotización pactada:</strong> precio base factor grupo familiar + GES + producto adicional
-        </p>
-      </span>
-     </div>
-    </div>
-    <p class="mb-4">
-      Al hacer click en el botón “Contratar”, estarás firmando un nuevo contrato (FUN), que incorpora tu cambio de plan de salud. El contrato (FUN) será enviado a tu correo electrónico al día hábil siguiente de haber firmado (con copia a tu empleador).
-    </p>
-    <small class="mb-3">
-      *UF al día 21/09/2020
-    </small>
-    <p class="mb-1">
-      <strong>Enviaremos un comprobante al siguiente correo electrónico</strong>
-    </p>
-    <p class="mb-3">
-      Si editas tu correo electrónico este cambio será sólo para este trámite en particular.
-    </p>
-    <div class="row">
-      <div class="col-lg-6 mb-2">
-        <div class="form-group fg-icon fg-icon-action">
-         <input type="text" class="form-control" id="usr" value="usuario@email.com" placeholder=" " disabled>
-         <i class="material-icons">mail</i>
-         <label for="usr">Correo electrónico</label>
-         <a href="#" data-toggle="modal" data-target=".bd-example-modal-md">
-          <i class="material-icons">edit</i>
-         </a>
+    <div class="modalbenefits__box">
+      <button class="modalbenefits__close" (click)="benefitsGo(0)">
+        <i class="material-icons">close</i>
+      </button>
+      <h5 class="modalbenefits__title">
+        <strong>¡Estás tomando una buena decisión!</strong>
+      </h5>
+      <p>
+        El plan <strong>Vanguardia Premium Lite Ultra CB/2109</strong> será incluido en tu cotización mensual de la Isapre y tendrá el siguiente costo:
+      </p>
+      <div class="message message-primary message-action mb-3 p-3">
+       <div class="message-side">
+        <span>
+          <p class="mb-0">
+            <strong>Total cotización pactada:</strong> precio base factor grupo familiar + GES + producto adicional
+          </p>
+        </span>
+       </div>
+      </div>
+      <p class="mb-4">
+        Al hacer click en el botón “Contratar”, estarás firmando un nuevo contrato (FUN), que incorpora tu cambio de plan de salud. El contrato (FUN) será enviado a tu correo electrónico al día hábil siguiente de haber firmado (con copia a tu empleador).
+      </p>
+      <small class="mb-3">
+        *UF al día 21/09/2020
+      </small>
+      <p class="mb-1">
+        <strong>Enviaremos un comprobante al siguiente correo electrónico</strong>
+      </p>
+      <p class="mb-3">
+        Si editas tu correo electrónico este cambio será sólo para este trámite en particular.
+      </p>
+      <div class="row">
+        <div class="col-lg-6 mb-2">
+          <div class="form-group fg-icon fg-icon-action">
+           <input type="text" class="form-control" id="usr" value="usuario@email.com" placeholder=" " disabled>
+           <i class="material-icons">mail</i>
+           <label for="usr">Correo electrónico</label>
+           <a href="#" data-toggle="modal" data-target=".bd-example-modal-md">
+            <i class="material-icons">edit</i>
+           </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="custom-control custom-checkbox mb-3">
-     <input class="custom-control-input" type="checkbox" value="" id="defaultCheck1">
-     <label class="custom-control-label" for="defaultCheck1"></label> Acepto los <a href="" target="_blank">Términos y condiciones</a>
-    </div>
-    <div class="row">
-      <div class="col-md-4 mb-1">
-        <a class="back-btn" (click)="benefitsGo(2)">
-          <i class="material-icons">keyboard_arrow_left</i>
-          <p>Volver</p>
-        </a>
+      <div class="custom-control custom-checkbox mb-3">
+       <input class="custom-control-input" type="checkbox" value="" id="defaultCheck1">
+       <label class="custom-control-label" for="defaultCheck1"></label> Acepto los <a href="" target="_blank">Términos y condiciones</a>
       </div>
-      <div class="col-md-4 offset-md-4 mb-1">
-        <button type="button" class="btn btn-primary w-100" (click)="benefitsGo(4)">Contratar</button> 
+      <div class="row">
+        <div class="col-md-4 mb-1 order-md-1 order-2">
+          <div class="mbl-center">
+            <a class="back-btn" (click)="benefitsGo(2)">
+              <i class="material-icons">keyboard_arrow_left</i>
+              <p>Volver</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 offset-md-4 mb-1 order-md-2 order-1">
+          <button type="button" class="btn btn-primary w-100" (click)="benefitsGo(4)">Contratar</button> 
+        </div>
       </div>
     </div>
   </div>
@@ -300,27 +344,31 @@
 
   <!-- Step 4 -->
   <div class="modalbenefits__body" [ngClass]="id == 4 ? 'modalbenefits__body--active' : ''" id="step4">
-    <button class="modalbenefits__close" (click)="benefitsGo(0)">
-      <i class="material-icons">close</i>
-    </button>
-    <div class="row">
-      <div class="col-md-1 pt-5">
-        <i class="ico-check-circle ico-big color-green"></i>
-      </div>
-      <div class="col-md-11 pt-5">
-        <h3 class="mb-2">
-          <strong>¡Solicitud enviada! </strong>
-        </h3>
-        <p class="mb-5">
-          Un ejecutivo se pondrá en contacto contigo dentro de los próximos días. 
-          Si tienes alguna consulta, no dudes en llamarnos a nuestro Contact Center al 600 600 3600.
-        </p>
-        <div class="row">
-          <div class="col-lg-6 mb-1">
-            <button type="button" class="btn btn-outline-primary w-100" (click)="benefitsGo(0)">FINALIZAR</button> 
+    <div class="modalbenefits__box">
+      <button class="modalbenefits__close" (click)="benefitsGo(0)">
+        <i class="material-icons">close</i>
+      </button>
+      <div class="row pt-5">
+        <div class="col-md-1">
+          <div class="mbl-center">
+            <i class="ico-check-circle ico-big color-green"></i>
           </div>
-          <div class="col-lg-6 mb-1">
-            <button type="button" class="btn btn-primary w-100" (click)="benefitsGo(1)">SEGUIR VIENDO BENEFICIOS</button> 
+        </div>
+        <div class="col-md-11">
+          <h3 class="mb-2">
+            <strong>¡Solicitud recibida con éxito!</strong>
+          </h3>
+          <p class="mb-5 pb-2">
+            Un ejecutivo se pondrá en contacto contigo dentro de los próximos días. 
+            Si tienes alguna consulta, no dudes en llamarnos a nuestro Contact Center al 600 600 3600.
+          </p>
+          <div class="row">
+            <div class="col-lg-6 mb-1 order-lg-1 order-2">
+              <button type="button" class="btn btn-outline-primary w-100" (click)="benefitsGo(0)">FINALIZAR</button> 
+            </div>
+            <div class="col-lg-6 mb-1 order-lg-2 order-1">
+              <button type="button" class="btn btn-primary w-100" (click)="benefitsGo(1)">SEGUIR VIENDO BENEFICIOS</button> 
+            </div>
           </div>
         </div>
       </div>
