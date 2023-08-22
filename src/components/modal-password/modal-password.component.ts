@@ -14,9 +14,18 @@ export class ModalpasswordComponent {
 
   id : number = 1;
   active : boolean = true;
+  visibility : boolean = false;
 
   passwordClose() {
     this.active = false;
+  }
+
+  passwordToggle() {
+    if(this.visibility) {
+      this.visibility = false;
+    }else{
+      this.visibility = true;
+    }
   }
 
   passwordGo(id: any) {
