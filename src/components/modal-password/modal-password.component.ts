@@ -15,9 +15,18 @@ export class ModalpasswordComponent {
   id : number = 1;
   active : boolean = true;
   visibility : boolean = false;
+  tooltip : boolean = false;
 
   passwordClose() {
     this.active = false;
+  }
+
+  passwordTooltip() {
+    if(this.tooltip) {
+      this.tooltip = false;
+    }else{
+      this.tooltip = true;
+    }
   }
 
   passwordToggle() {
@@ -30,6 +39,7 @@ export class ModalpasswordComponent {
 
   passwordGo(id: any) {
     this.id = id;
+    this.tooltip = false;
   }
 
 }
