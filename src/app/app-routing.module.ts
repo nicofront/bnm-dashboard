@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from 'src/pages/home/home.component';
-// import { FooterComponent } from 'src/pages/pfooter/pfooter.component';
-// import { AseguradosComponent } from 'src/pages/asegurados/asegurados.component';
-import { ProvidersComponent } from 'src/pages/providers/providers.component';
+import { VerificationComponent } from 'src/app/components/verification/verification.component';
+import { VerificationTimeoutComponent } from 'src/app/components/verification-timeout/verification-timeout.component';
+import { VerificationModalComponent } from 'src/app/components/verification-modal/verification-modal.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'providers', component: ProvidersComponent }
+  { path: '', redirectTo: 'verification', pathMatch: 'full' },
+  { path: 'verification', component: VerificationComponent },
+  { path: 'verification-modal', component: VerificationModalComponent },
+  { path: 'verification-timeout', component: VerificationTimeoutComponent }
 ];
 
 @NgModule({
