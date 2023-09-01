@@ -1,7 +1,7 @@
 <div class="verification">
-  <div class="verification__box">
+  <div class="verification__box" [ngClass]="id == 1 ? 'verification__box--active' : ''">
     <div class="text-center">
-      <img src="./assets/svg/sms.svg" class="mb-4" />
+      <img src="./assets/img/shield.png" class="mb-4" />
     </div>
     <h4 class="text-center verification__box__title">
       <strong>Ingresa tu RUT, recibe un código a tu celular y crea tu nueva contraseña</strong>
@@ -14,10 +14,10 @@
          <label for="rut">RUT</label>
          <small>Texto de ayuda y validación</small>
         </div>
-        <button type="button" class="btn btn-primary disabled w-100">Enviar Código</button> 
+        <button type="button" class="btn btn-primary w-100" (click)="verificationGo(2)">Enviar Código</button> 
       </div>
       <div class="col-md-10 offset-md-1">
-        <a class="back-btn verification__center"href="#">
+        <a class="back-btn verification__center" (click)="verificationGo(0)">
          <i class="material-icons">
          keyboard_arrow_left
          </i>
@@ -27,7 +27,7 @@
     </div>
   </div>
 
-  <div class="verification__box">
+  <div class="verification__box" [ngClass]="id == 2 ? 'verification__box--active' : ''">
     <div class="text-center">
       <img src="./assets/svg/sms.svg" class="mb-4" />
     </div>
@@ -36,8 +36,8 @@
     </h4>
     <div class="row">
       <div class="col-md-10 offset-md-1 mb-5">
-        <button type="button" class="btn btn-primary w-100 mb-3">Enviar Código</button> 
-        <button type="button" class="btn btn-outline-primary w-100">Cancelar</button> 
+        <button type="button" class="btn btn-primary w-100 mb-3" (click)="verificationGo(3)">Enviar Código</button> 
+        <button type="button" class="btn btn-outline-primary w-100" (click)="verificationGo(0)">Cancelar</button> 
       </div>
       <div class="col-md-12 mb-5">
         <p class="text-center mb-0">
@@ -46,7 +46,7 @@
         </p>
       </div>
       <div class="col-md-10 offset-md-1">
-        <a class="back-btn verification__center"href="#">
+        <a class="back-btn verification__center" (click)="verificationGo(1)">
          <i class="material-icons">
          keyboard_arrow_left
          </i>
@@ -56,7 +56,7 @@
     </div>
   </div>
 
-  <div class="verification__box">
+  <div class="verification__box" [ngClass]="id == 3 ? 'verification__box--active' : ''">
     <div class="text-center">
       <img src="./assets/svg/sms.svg" class="mb-4" />
     </div>

@@ -9,6 +9,9 @@
 .verification{
 	padding: 56px 0;
 	min-height: 100vh;
+	.back-btn{
+		cursor: pointer;
+	}
 	.verification__center{
 		justify-content: center;
 	}
@@ -20,8 +23,12 @@
 		background: #FFF; 
 		padding: 36px 52px;
 		margin: 0 auto;
+		display: none;
+		&.verification__box--active{
+			display: block;
+		}
 		.verification__box__title{
-			margin-bottom: 24px;
+			margin-bottom: 32px;
 			padding: 0 40px;
 		}
 		.label{
