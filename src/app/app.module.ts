@@ -15,12 +15,12 @@ import { AppComponent } from './app.component';
 // import { FooterComponent } from 'src/pages/pfooter/pfooter.component';
 // import { AseguradosComponent } from 'src/pages/asegurados/asegurados.component';
 
-import { ModalpasswordModule } from 'src/components/modal-password/modal-password.module';
-import { PasswordComponent } from 'src/pages/password/password.component';
+import { ModalseguimientoModule } from 'src/components/modal-seguimiento/modal-seguimiento.module';
+import { SeguimientoComponent } from 'src/pages/seguimiento/seguimiento.component';
 
 @NgModule({
-  declarations: [AppComponent, PasswordComponent],
-  imports: [BrowserModule, AppRoutingModule, ModalpasswordModule],
+  declarations: [AppComponent, SeguimientoComponent],
+  imports: [BrowserModule, AppRoutingModule, ModalseguimientoModule],
   providers: [],
   bootstrap: [AppComponent],
 })

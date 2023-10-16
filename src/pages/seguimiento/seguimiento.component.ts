@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 
-import { Modalpassword } from 'src/components/modal-password/modal-password.types';
+import { Modalseguimiento } from 'src/components/modal-seguimiento/modal-seguimiento.types';
 import { ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './password.component.html',
+  templateUrl: './seguimiento.component.html',
   styleUrls: []
 })
 
-export class PasswordComponent {
+export class SeguimientoComponent {
 
   public ngOnInit() {
 

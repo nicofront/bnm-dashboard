@@ -1,13 +1,13 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
-import { Modalpassword } from './modal-password.types';
+import { Modalseguimiento } from './modal-seguimiento.types';
 
 @Component({
-  selector: 'bm-modal-password',
-  styleUrls: ['modal-password.component.scss'],
-  templateUrl: 'modal-password.component.html',
+  selector: 'bm-modal-seguimiento',
+  styleUrls: ['modal-seguimiento.component.scss'],
+  templateUrl: 'modal-seguimiento.component.html',
 })
-export class ModalpasswordComponent {
+export class ModalseguimientoComponent {
 
   constructor() {
   }
@@ -17,11 +17,11 @@ export class ModalpasswordComponent {
   visibility : boolean = false;
   tooltip : boolean = false;
 
-  passwordClose() {
+  seguimientoClose() {
     this.active = false;
   }
 
-  passwordTooltip() {
+  seguimientoTooltip() {
     if(this.tooltip) {
       this.tooltip = false;
     }else{
@@ -29,7 +29,7 @@ export class ModalpasswordComponent {
     }
   }
 
-  passwordToggle() {
+  seguimientoToggle() {
     if(this.visibility) {
       this.visibility = false;
     }else{
@@ -37,7 +37,7 @@ export class ModalpasswordComponent {
     }
   }
 
-  passwordGo(id: any) {
+  seguimientoGo(id: any) {
     this.id = id;
     this.tooltip = false;
   }

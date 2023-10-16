@@ -1,18 +1,19 @@
 <div class="body"></div>
 
-<div class="modalpassword">
+<div class="modalseguimiento">
 
-  <div class="modalpassword__body" [ngClass]="active? 'modalpassword__body--active' : ''">
-    <button class="modalpassword__close" (click)="passwordClose()">
+  <!-- Modal Seguimiento Full -->
+  <div class="modalseguimiento__body" [ngClass]="active? 'modalseguimiento__body--active' : ''">
+    <button class="modalseguimiento__close" (click)="seguimientoClose()">
       <i class="material-icons">close</i>
     </button>
-    <h5 class="modalpassword__title mb-2 pb-1">
+    <h5 class="modalseguimiento__title mb-2 pb-1">
       <strong>Tienes pendiente el detalle de prestación y nombres de los médicos</strong>
     </h5>
     <h6 class="mb-4 pb-2">
       Para completar el valor total en la boleta, es necesario el detalle de las prestaciones cobradas como Honorarios Médicos, Derecho a Pabellón, otros profesionales, anestesia y prestaciones adicionales.
     </h6>
-    <div class="modalpassword__box">
+    <div class="modalseguimiento__box">
       <img src="assets/img/icon-riddle.png" alt="Riddle">
       <div>
         <h6 class="mb-2">
@@ -51,7 +52,7 @@
 
     <div class="row">
       <div class="col-md-3 offset-md-6 order-md-1 order-2">
-        <button class="btn w-100 btn-outline-primary" (click)="passwordClose()">CANCELAR</button>
+        <button class="btn w-100 btn-outline-primary" (click)="seguimientoClose()">CANCELAR</button>
       </div>
       <div class="col-md-3 order-md-2 order-1 mb-2">
         <button class="btn w-100 btn-primary disabled">ADJUNTAR</button>
@@ -59,17 +60,18 @@
     </div>
   </div>
 
-  <div class="modalpassword__body" [ngClass]="active? 'modalpassword__bodyactive' : ''">
-    <button class="modalpassword__close" (click)="passwordClose()">
+  <!-- Modal Seguimiento No vigente -->
+  <div class="modalseguimiento__body" [ngClass]="active? 'modalseguimiento__body--active' : ''">
+    <button class="modalseguimiento__close" (click)="seguimientoClose()">
       <i class="material-icons">close</i>
     </button>
-    <h5 class="modalpassword__title mb-2 pb-1">
+    <h5 class="modalseguimiento__title mb-2 pb-1">
       <strong>El beneficiario no está vigente</strong>
     </h5>
     <h6 class="mb-4 pb-2">
       El beneficiario indicado en la boleta/factura no estaba vigente en el plan de salud en la fecha en que recibió la atención.
     </h6>
-    <div class="modalpassword__box">
+    <div class="modalseguimiento__box">
       <img src="" alt="">
       <div>
         <h6 class="mb-2">
