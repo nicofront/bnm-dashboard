@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VerificationModalComponent } from './components/verification-modal/verification-modal.component';
 import { VerificationTimeoutComponent } from './components/verification-timeout/verification-timeout.component';
-import { VerificationComponent } from './components/verification/verification.component';
+import { RecoverComponent } from './components/recover/recover.component';
 
 // import { HighchartsChartModule } from 'highcharts-angular';
 
@@ -22,7 +22,7 @@ import { VerificationComponent } from './components/verification/verification.co
 // import { VerificationComponent } from 'src/pages/verification/verification.component';
 
 @NgModule({
-  declarations: [AppComponent, VerificationModalComponent, VerificationTimeoutComponent, VerificationComponent],
+  declarations: [AppComponent, RecoverComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
