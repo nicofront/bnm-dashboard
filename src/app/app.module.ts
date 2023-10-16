@@ -15,12 +15,12 @@ import { AppComponent } from './app.component';
 // import { FooterComponent } from 'src/pages/pfooter/pfooter.component';
 // import { AseguradosComponent } from 'src/pages/asegurados/asegurados.component';
 
-import { ModalpasswordModule } from 'src/components/modal-password/modal-password.module';
-import { PasswordComponent } from 'src/pages/password/password.component';
+import { ModalconsentimientoModule } from 'src/components/modal-consentimiento/modal-consentimiento.module';
+import { ConsentimientoComponent } from 'src/pages/consentimiento/consentimiento.component';
 
 @NgModule({
-  declarations: [AppComponent, PasswordComponent],
-  imports: [BrowserModule, AppRoutingModule, ModalpasswordModule],
+  declarations: [AppComponent, ConsentimientoComponent],
+  imports: [BrowserModule, AppRoutingModule, ModalconsentimientoModule],
   providers: [],
   bootstrap: [AppComponent],
 })

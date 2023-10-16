@@ -6,7 +6,7 @@
 	height: 100vh;
 }
 
-.modalpassword{
+.modalconsentimiento{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -17,7 +17,7 @@
 	.back-btn{
 		cursor: pointer;
 	}
-	.modalpassword__body{
+	.modalconsentimiento__body{
 		box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.25); 
 		border-radius: 10px;
 		background: #FFF; 
@@ -35,10 +35,10 @@
 			left: 0;
 			transform: translate(0%, 0%);
 		}
-		&.modalpassword__body--active{
+		&.modalconsentimiento__body--active{
 			display: inline-block;
 		}
-		.modalpassword__close{
+		.modalconsentimiento__close{
 			display: inline-block;
 			position: absolute;
 			padding: 0;
@@ -51,20 +51,20 @@
 			cursor: pointer;
 			z-index: 2;
 		}
-		.modalpassword__img{
+		.modalconsentimiento__img{
 			text-align: center;
 		}
-		.modalpassword__title{
+		.modalconsentimiento__title{
 			margin: 0;
 			margin-bottom: 24px;
 			padding-right: 30px;
 		}
-		.modalpassword__step{
+		.modalconsentimiento__step{
 			padding-bottom: 18px;
 			p{
 				position: relative;
 				padding-left: 40px;
-				.modalpassword__circle{
+				.modalconsentimiento__circle{
 					position: absolute;
 					display: inline-block;
 					top: 0;

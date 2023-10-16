@@ -1,13 +1,13 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
-import { Modalpassword } from './modal-password.types';
+import { Modalconsentimiento } from './modal-consentimiento.types';
 
 @Component({
-  selector: 'bm-modal-password',
-  styleUrls: ['modal-password.component.scss'],
-  templateUrl: 'modal-password.component.html',
+  selector: 'bm-modal-consentimiento',
+  styleUrls: ['modal-consentimiento.component.scss'],
+  templateUrl: 'modal-consentimiento.component.html',
 })
-export class ModalpasswordComponent {
+export class ModalconsentimientoComponent {
 
   constructor() {
   }
@@ -17,11 +17,11 @@ export class ModalpasswordComponent {
   visibility : boolean = false;
   tooltip : boolean = false;
 
-  passwordClose() {
+  consentimientoClose() {
     this.active = false;
   }
 
-  passwordTooltip() {
+  consentimientoTooltip() {
     if(this.tooltip) {
       this.tooltip = false;
     }else{
@@ -29,7 +29,7 @@ export class ModalpasswordComponent {
     }
   }
 
-  passwordToggle() {
+  consentimientoToggle() {
     if(this.visibility) {
       this.visibility = false;
     }else{
@@ -37,7 +37,7 @@ export class ModalpasswordComponent {
     }
   }
 
-  passwordGo(id: any) {
+  consentimientoGo(id: any) {
     this.id = id;
     this.tooltip = false;
   }
