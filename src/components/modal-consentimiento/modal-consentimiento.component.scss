@@ -35,6 +35,17 @@
 			left: 0;
 			transform: translate(0%, 0%);
 		}
+		.justify-end{
+			display: flex;
+			justify-content: flex-end;
+			@media( max-width: 767px) {
+				display: block;
+				button{
+					width: 100%;
+					display: block;
+				}
+			}
+		}
 		&.modalconsentimiento__body--active{
 			display: inline-block;
 		}
