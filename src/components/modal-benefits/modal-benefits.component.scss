@@ -6,6 +6,81 @@
 	height: 200vh;
 }
 
+
+.modal-title{
+	font-size: 19px;
+	line-height: 23px;
+	margin: 0;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+.modalbenefits__wrapper{
+	display: flex;
+	column-gap: 15px;
+	@media (max-width: 860px){
+		display: block;
+		max-height: 100vh;
+		overflow: scroll;
+	}
+}
+
+.modalbenefits__card{
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	border: 2px solid #EBEBEB;
+	border-top: none;
+	width: 320px;
+	@media (max-width: 1200px){
+		width: 300px;
+	}
+	@media (max-width: 1000px){
+		width: 200px;
+	}
+	@media (max-width: 860px){
+		width: auto;
+		margin-bottom: 20px;
+		&:last-child(){
+			margin-bottom: 0;
+		}
+	}
+	.modalbenefits__top{
+		overflow: hidden;
+		border-radius: 10px 10px 0 0; 
+		height: 160px;
+		img{
+			width: 100%;
+			background-color: grey;
+			display: block;
+		}
+	}
+	.modalbenefits__bottom{
+		border-radius: 0 0 10px 10px ; 
+		border-top: none;
+		padding: 16px;
+		.modalbenefits__card__title{
+			margin-bottom: 16px;
+		}
+		p{
+			margin-bottom: 5px;
+		}
+		ul{
+			padding-left: 10px;
+			margin-bottom: 24px;
+		}
+		.button{
+			border-radius: 60px; 
+			display: block;
+			border: none;
+			text-align: center;
+			line-height: normal;
+			letter-spacing: -0.42px;
+			cursor: pointer;
+		}
+	}
+}
+
 .modalbenefits{
 	position: absolute;
 	top: 0;
@@ -232,48 +307,6 @@
 			margin: 0;
 			margin-bottom: 20px;
 			padding-right: 40px;
-		}
-		.modalbenefits__card{
-			display: inline-block;
-			border-radius: 10px;
-			width: 338px;
-			width: 500px;
-			max-width: 100%;
-			.modalbenefits__top{
-				overflow: hidden;
-				border-radius: 10px 10px 0 0; 
-				img{
-					width: 100%;
-					height: 100px;
-					background-color: grey;
-					display: block;
-				}
-			}
-			.modalbenefits__bottom{
-				border-radius: 0 0 10px 10px ; 
-				border: 2px solid #EBEBEB;
-				border-top: none;
-				padding: 16px;
-				.modalbenefits__card__title{
-					margin-bottom: 16px;
-				}
-				p{
-					margin-bottom: 5px;
-				}
-				ul{
-					padding-left: 10px;
-					margin-bottom: 24px;
-				}
-				.button{
-					border-radius: 60px; 
-					display: block;
-					border: none;
-					text-align: center;
-					line-height: normal;
-					letter-spacing: -0.42px;
-					cursor: pointer;
-				}
-			}
 		}
 	}
 }
